@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Аренда автовышки в Алматы — выезд за 1 час | ALMATY LIFT</title>
-<meta name="description" content="Автовышки 14–28 метров в аренду в Алматы. Японская техника, опытные операторы, выезд за 1 час. От 8 000 ₸/час. Звоните: +7 707 900 9329">
-<meta name="keywords" content="аренда автовышки Алматы, автовышка 28м, автовышка 20м, услуги автовышки, диэлектрическая автовышка, автовышка в аренду">
+<title>Автовышки — оформите заказ и получите скидку до 10%</title>
+<meta name="description" content="Автовышки 16–35 метров в аренду в Алматы. Японская техника, опытные операторы, выезд за 1 час. От 12 000 ₸/3 часа. Скидка до 10%. Звоните: +7 707 900 9329">
+<meta name="keywords" content="аренда автовышки Алматы, автовышка 28м, автовышка 35м, услуги автовышки, диэлектрическая автовышка, автовышка в аренду">
 
-<meta property="og:title" content="Аренда автовышки в Алматы — выезд за 1 час">
-<meta property="og:description" content="Автовышки 14–28 метров. Японская техника. От 8 000 ₸/час. +7 707 900 9329">
+<meta property="og:title" content="Автовышки — скидка до 10% при заказе">
+<meta property="og:description" content="Автовышки 16–35 метров. Японская техника. От 12 000 ₸/3 часа. +7 707 900 9329">
 <meta property="og:type" content="website">
 
 <script type="application/ld+json">
@@ -16,7 +16,6 @@
   "@context":"https://schema.org",
   "@type":"LocalBusiness",
   "name":"ALMATY LIFT — Аренда автовышек",
-  "image":"",
   "telephone":"+77079009329",
   "address":{"@type":"PostalAddress","addressLocality":"Алматы","addressCountry":"KZ"},
   "openingHours":"Mo-Su 00:00-24:00",
@@ -30,12 +29,35 @@
 
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-[data-theme="dark"]{--bg:#0a0a0a;--bg2:#111;--bg3:#1a1a1a;--bg4:#222;--text:#fff;--text2:#b0b0b0;--text3:#707070;--border:#2a2a2a;--card:#141414;--accent:#fff;--gold:#c8a24e;--gold2:#b8923e;--overlay:rgba(0,0,0,.75);--shadow:0 4px 24px rgba(0,0,0,.4);--glass:rgba(10,10,10,.85)}
-[data-theme="light"]{--bg:#fff;--bg2:#f5f5f5;--bg3:#eee;--bg4:#e8e8e8;--text:#0a0a0a;--text2:#555;--text3:#999;--border:#e0e0e0;--card:#fff;--accent:#0a0a0a;--gold:#9a7830;--gold2:#7a6020;--overlay:rgba(0,0,0,.5);--shadow:0 4px 24px rgba(0,0,0,.08);--glass:rgba(255,255,255,.88)}
+
+/* DARK THEME — gold accents */
+[data-theme="dark"]{
+  --bg:#0a0a0a;--bg2:#111;--bg3:#1a1a1a;--bg4:#222;
+  --text:#fff;--text2:#b0b0b0;--text3:#707070;
+  --border:#2a2a2a;--card:#141414;
+  --accent:#fff;--gold:#c8a24e;--gold2:#b8923e;
+  --overlay:rgba(0,0,0,.75);--shadow:0 4px 24px rgba(0,0,0,.4);
+  --glass:rgba(10,10,10,.85);
+  --btn-primary-bg:var(--gold);--btn-primary-text:#000;
+  --btn-primary-hover-bg:#fff;--btn-primary-hover-text:#000;
+}
+
+/* LIGHT THEME — strict black & white */
+[data-theme="light"]{
+  --bg:#fff;--bg2:#f5f5f5;--bg3:#ebebeb;--bg4:#e0e0e0;
+  --text:#000;--text2:#111;--text3:#444;
+  --border:#ccc;--card:#fff;
+  --accent:#000;--gold:#000;--gold2:#333;
+  --overlay:rgba(0,0,0,.5);--shadow:0 4px 24px rgba(0,0,0,.12);
+  --glass:rgba(255,255,255,.92);
+  --btn-primary-bg:#000;--btn-primary-text:#fff;
+  --btn-primary-hover-bg:#333;--btn-primary-hover-text:#fff;
+}
+
 :root{--r:12px;--t:.3s cubic-bezier(.25,.1,.25,1);--fh:'Montserrat',sans-serif;--fn:'Bebas Neue',sans-serif}
 html{scroll-behavior:smooth}
 body{font-family:var(--fh);color:var(--text);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;transition:background .4s,color .4s}
-img{max-width:100%;display:block}
+img{max-width:100%;display:block;object-fit:cover}
 a{text-decoration:none;color:inherit}
 button{border:none;cursor:pointer;font-family:inherit;background:none;color:inherit}
 input,textarea,select{font-family:inherit}
@@ -48,14 +70,22 @@ input,textarea,select{font-family:inherit}
 /* ========== HEADER ========== */
 .hdr{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--glass);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);transition:background .4s}
 .hdr-in{display:flex;align-items:center;justify-content:space-between;height:56px}
-.logo{display:flex;align-items:center;gap:8px;font-family:var(--fn);font-size:1.4rem;letter-spacing:2px;color:var(--text)}
-.logo-ic{width:32px;height:32px;color:var(--gold)}
-@media(min-width:768px){.logo{font-size:1.55rem}}
+
+/* LOGO — без рамок, просто изображение или текст */
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-img{height:36px;width:auto;display:block}
+.logo-text{font-family:var(--fn);font-size:1.4rem;letter-spacing:2px;color:var(--text)}
+[data-theme="light"] .logo-text{color:#000}
+@media(min-width:768px){.logo-text{font-size:1.55rem}}
+
 .hdr-r{display:flex;align-items:center;gap:5px}
 .lang-t{display:flex;background:var(--bg3);border-radius:6px;overflow:hidden;border:1px solid var(--border)}
 .lang-b{padding:5px 10px;font-size:.65rem;font-weight:700;color:var(--text3);transition:var(--t);letter-spacing:.5px}
+[data-theme="light"] .lang-b{color:#555}
 .lang-b.on{background:var(--text);color:var(--bg);border-radius:4px}
+[data-theme="light"] .lang-b.on{background:#000;color:#fff}
 .thm-t{width:32px;height:32px;border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--text2);transition:var(--t);background:var(--bg3);border:1px solid var(--border)}
+[data-theme="light"] .thm-t{color:#000;border-color:#bbb}
 .thm-t:hover{color:var(--gold)}
 .thm-t svg{width:16px;height:16px}
 .ham{display:flex;flex-direction:column;gap:5px;padding:8px;margin-left:2px}
@@ -67,10 +97,12 @@ input,textarea,select{font-family:inherit}
 .nav-d{display:none;align-items:center;gap:22px}
 @media(min-width:1024px){.nav-d{display:flex}}
 .nav-d a{font-size:.72rem;font-weight:700;color:var(--text2);transition:var(--t);letter-spacing:.5px;text-transform:uppercase}
+[data-theme="light"] .nav-d a{color:#333}
 .nav-d a:hover{color:var(--text)}
-.btn-hb{display:none;padding:7px 18px;background:var(--gold);color:#000;font-weight:800;font-size:.7rem;border-radius:6px;transition:var(--t);letter-spacing:.5px;text-transform:uppercase}
+[data-theme="light"] .nav-d a:hover{color:#000}
+.btn-hb{display:none;padding:7px 18px;background:var(--btn-primary-bg);color:var(--btn-primary-text);font-weight:800;font-size:.7rem;border-radius:6px;transition:var(--t);letter-spacing:.5px;text-transform:uppercase}
 @media(min-width:1024px){.btn-hb{display:inline-flex}}
-.btn-hb:hover{background:var(--text);color:var(--bg)}
+.btn-hb:hover{background:var(--btn-primary-hover-bg);color:var(--btn-primary-hover-text)}
 
 /* ========== MOBILE MENU ========== */
 .mob-ov{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:998;opacity:0;pointer-events:none;transition:var(--t)}
@@ -78,171 +110,250 @@ input,textarea,select{font-family:inherit}
 .mob-m{position:fixed;top:0;right:-100%;width:82%;max-width:360px;bottom:0;background:var(--bg);z-index:999;padding:72px 20px 20px;transition:.4s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;overflow-y:auto;border-left:1px solid var(--border)}
 .mob-m.on{right:0}
 .mob-m a{color:var(--text2);font-size:.9rem;font-weight:700;padding:13px 0;border-bottom:1px solid var(--border);transition:var(--t);display:block}
+[data-theme="light"] .mob-m a{color:#222}
 .mob-m a:hover{color:var(--text);padding-left:6px}
+[data-theme="light"] .mob-m a:hover{color:#000}
 .mob-grp{margin-top:6px}
 .mob-grp-t{font-size:.62rem;font-weight:800;color:var(--gold);letter-spacing:2px;text-transform:uppercase;padding:14px 0 6px;border-bottom:1px solid var(--border);margin-bottom:4px}
+[data-theme="light"] .mob-grp-t{color:#000}
 .mob-m a.mob-car{font-size:.76rem;font-weight:600;padding:9px 0 9px 10px;border-bottom:1px dashed var(--border);color:var(--text2)}
+[data-theme="light"] .mob-m a.mob-car{color:#333}
 .mob-m a.mob-car:hover{color:var(--gold);padding-left:14px}
+[data-theme="light"] .mob-m a.mob-car:hover{color:#000}
 .mob-info{margin-top:auto;padding-top:20px;border-top:1px solid var(--border)}
 .mob-info p{font-size:.72rem;color:var(--text3);margin-bottom:4px}
+[data-theme="light"] .mob-info p{color:#444}
 .mob-dev{margin-top:14px;font-size:.66rem;color:var(--text3)}
+[data-theme="light"] .mob-dev{color:#444}
 .mob-dev a{font-size:.66rem;color:var(--gold);font-weight:800;display:inline;border:none;padding:0}
+[data-theme="light"] .mob-dev a{color:#000;text-decoration:underline}
 
 /* ========== SECTIONS ========== */
 .sec{padding:50px 0}
 @media(min-width:768px){.sec{padding:72px 0}}
 .sl{font-size:.62rem;font-weight:800;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+[data-theme="light"] .sl{color:#000}
 .st{font-family:var(--fh);font-weight:900;font-size:clamp(1.45rem,4vw,2.4rem);color:var(--text);line-height:1.1;text-transform:uppercase;letter-spacing:-.5px}
+[data-theme="light"] .st{color:#000}
 .ss{color:var(--text3);margin-top:8px;font-size:.85rem;max-width:540px;line-height:1.55}
+[data-theme="light"] .ss{color:#333}
 
 /* ========== HERO ========== */
 .hero{position:relative;padding-top:100px;padding-bottom:40px;overflow:hidden}
 @media(min-width:768px){.hero{padding-top:130px;padding-bottom:70px}}
-.hero-bg{position:absolute;inset:0;z-index:0;opacity:.12;pointer-events:none}
-.hero-bg svg{width:100%;height:100%}
 .hero-grid-pattern{position:absolute;inset:0;z-index:0;background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:40px 40px;opacity:.25;mask-image:radial-gradient(ellipse at center,#000 30%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse at center,#000 30%,transparent 75%)}
+[data-theme="light"] .hero-grid-pattern{opacity:.15}
 .hero-in{position:relative;z-index:2;display:grid;gap:28px;align-items:center}
 @media(min-width:900px){.hero-in{grid-template-columns:1.15fr .85fr;gap:40px}}
 .hero-badge{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;background:rgba(200,162,78,.1);border:1px solid var(--gold2);border-radius:100px;font-size:.64rem;font-weight:800;color:var(--gold);letter-spacing:1px;text-transform:uppercase;margin-bottom:16px}
+[data-theme="light"] .hero-badge{background:rgba(0,0,0,.06);border-color:#999;color:#000}
 .hero-badge::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold);animation:pulseBadge 1.8s ease-in-out infinite}
+[data-theme="light"] .hero-badge::before{background:#000;box-shadow:none}
 @keyframes pulseBadge{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.3)}}
-.hero-h1{font-family:var(--fh);font-weight:900;font-size:clamp(1.9rem,5.5vw,3.6rem);line-height:1.02;text-transform:uppercase;letter-spacing:-1.5px;margin-bottom:14px}
+.hero-h1{font-family:var(--fh);font-weight:900;font-size:clamp(1.9rem,5.5vw,3.6rem);line-height:1.02;text-transform:uppercase;letter-spacing:-1.5px;margin-bottom:14px;color:var(--text)}
+[data-theme="light"] .hero-h1{color:#000}
 .hero-h1 .hl{color:var(--gold);display:inline-block}
+[data-theme="light"] .hero-h1 .hl{color:#000;text-decoration:underline;text-underline-offset:4px}
 .hero-sub{color:var(--text2);font-size:.92rem;line-height:1.55;margin-bottom:22px;max-width:520px}
+[data-theme="light"] .hero-sub{color:#222}
 .hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:22px;max-width:460px}
 .hero-stat{border-left:2px solid var(--gold);padding:4px 0 4px 10px}
+[data-theme="light"] .hero-stat{border-color:#000}
 .hero-stat-v{font-family:var(--fn);font-size:1.5rem;color:var(--text);letter-spacing:.5px;line-height:1}
+[data-theme="light"] .hero-stat-v{color:#000}
 .hero-stat-l{font-size:.6rem;color:var(--text3);text-transform:uppercase;letter-spacing:1px;margin-top:3px}
+[data-theme="light"] .hero-stat-l{color:#555}
 .hero-cta{display:flex;flex-wrap:wrap;gap:10px}
 .hbtn{padding:13px 22px;border-radius:8px;font-weight:800;font-size:.78rem;letter-spacing:.6px;text-transform:uppercase;transition:var(--t);display:inline-flex;align-items:center;gap:8px}
-.hbtn-1{background:var(--gold);color:#000}
-.hbtn-1:hover{background:var(--text);color:var(--bg);transform:translateY(-2px)}
+.hbtn-1{background:var(--btn-primary-bg);color:var(--btn-primary-text)}
+.hbtn-1:hover{background:var(--btn-primary-hover-bg);color:var(--btn-primary-hover-text);transform:translateY(-2px)}
 .hbtn-2{background:transparent;color:var(--text);border:1px solid var(--border)}
+[data-theme="light"] .hbtn-2{color:#000;border-color:#999}
 .hbtn-2:hover{border-color:var(--gold);color:var(--gold)}
-.hero-vis{position:relative;aspect-ratio:4/3;border-radius:16px;overflow:hidden;background:linear-gradient(135deg,#1a1a1a,#0a0a0a);border:1px solid var(--border);box-shadow:0 20px 60px rgba(0,0,0,.5)}
-[data-theme="light"] .hero-vis{background:linear-gradient(135deg,#f0f0f0,#fafafa)}
-.hero-vis svg{width:100%;height:100%}
+[data-theme="light"] .hbtn-2:hover{border-color:#000;color:#000}
+
+/* Hero image */
+.hero-vis{position:relative;aspect-ratio:4/3;border-radius:16px;overflow:hidden;background:var(--bg3);border:1px solid var(--border);box-shadow:0 20px 60px rgba(0,0,0,.5)}
+[data-theme="light"] .hero-vis{box-shadow:0 8px 40px rgba(0,0,0,.15);border-color:#ddd}
+.hero-vis img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-vis-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.4) 0%,transparent 60%);pointer-events:none}
+[data-theme="light"] .hero-vis-overlay{background:linear-gradient(to top,rgba(0,0,0,.2) 0%,transparent 60%)}
+
+/* Discount badge on hero */
+.discount-badge{position:absolute;top:14px;right:14px;background:var(--btn-primary-bg);color:var(--btn-primary-text);font-family:var(--fn);font-size:1.1rem;padding:8px 14px;border-radius:8px;letter-spacing:1px;z-index:3;box-shadow:0 4px 16px rgba(0,0,0,.3)}
 
 /* ========== FLEET ========== */
 .flt{display:flex;flex-wrap:wrap;gap:6px;margin:20px 0 14px}
 .fb{padding:7px 16px;border-radius:100px;background:var(--bg3);border:1px solid var(--border);font-size:.7rem;font-weight:700;color:var(--text2);transition:var(--t);letter-spacing:.3px}
-.fb:hover,.fb.on{background:var(--gold);color:#000;border-color:var(--gold)}
+[data-theme="light"] .fb{color:#333;background:#eee;border-color:#ccc}
+.fb:hover,.fb.on{background:var(--btn-primary-bg);color:var(--btn-primary-text);border-color:var(--btn-primary-bg)}
 .catbar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:14px}
 .ccnt{font-size:.75rem;color:var(--text3)}
+[data-theme="light"] .ccnt{color:#444}
 .ssel{padding:6px 10px;border-radius:6px;border:1px solid var(--border);font-size:.72rem;color:var(--text2);background:var(--bg3);cursor:pointer}
+[data-theme="light"] .ssel{color:#222;background:#eee;border-color:#bbb}
 .cg{display:grid;grid-template-columns:1fr;gap:16px}
 @media(min-width:560px){.cg{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:1000px){.cg{grid-template-columns:repeat(3,1fr);gap:20px}}
 .cc{background:var(--card);border-radius:var(--r);overflow:hidden;border:1px solid var(--border);transition:var(--t);position:relative;display:flex;flex-direction:column}
+[data-theme="light"] .cc{border-color:#ddd;box-shadow:0 2px 12px rgba(0,0,0,.06)}
 .cc:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--gold2)}
-.cci{position:relative;aspect-ratio:16/10;overflow:hidden;background:linear-gradient(135deg,#1a1a1a,#252525);cursor:pointer}
-[data-theme="light"] .cci{background:linear-gradient(135deg,#eee,#f8f8f8)}
-.cci svg{width:100%;height:100%;transition:.6s ease}
-.cc:hover .cci svg{transform:scale(1.05)}
+[data-theme="light"] .cc:hover{border-color:#000;box-shadow:0 8px 30px rgba(0,0,0,.15)}
+.cci{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--bg3);cursor:pointer}
+.cci img{width:100%;height:100%;object-fit:cover;display:block;transition:.6s ease}
+.cc:hover .cci img{transform:scale(1.05)}
 .cbg{position:absolute;top:10px;left:10px;padding:4px 10px;border-radius:5px;font-size:.6rem;font-weight:800;letter-spacing:.5px;text-transform:uppercase;z-index:2}
-.bk-compact{background:#1a2a1a;color:#4caf50;border:1px solid #2e7d32}
-.bk-standard{background:#1a1f2a;color:#42a5f5;border:1px solid #1976d2}
-.bk-energy{background:#2a1f1a;color:#ffa726;border:1px solid #e65100}
-.bk-board{background:#2a1a2a;color:#ab47bc;border:1px solid #7b1fa2}
-.bk-high{background:#2a1a1a;color:#ef5350;border:1px solid #c62828}
-.bk-max{background:linear-gradient(135deg,#1a1a1a,#2a2a2a);color:var(--gold);border:1px solid var(--gold2)}
-[data-theme="light"] .bk-compact{background:#e8f5e9;color:#2e7d32;border-color:#a5d6a7}
-[data-theme="light"] .bk-standard{background:#e3f2fd;color:#1565c0;border-color:#90caf9}
-[data-theme="light"] .bk-energy{background:#fff3e0;color:#e65100;border-color:#ffcc80}
-[data-theme="light"] .bk-board{background:#f3e5f5;color:#6a1b9a;border-color:#ce93d8}
-[data-theme="light"] .bk-high{background:#ffebee;color:#c62828;border-color:#ef9a9a}
-[data-theme="light"] .bk-max{background:#f5f0e0;color:#7a6020;border-color:#c8a24e}
-.chdg{position:absolute;top:10px;right:10px;padding:4px 9px;border-radius:5px;font-family:var(--fn);font-size:.95rem;background:rgba(0,0,0,.65);color:var(--gold);letter-spacing:1px;z-index:2;backdrop-filter:blur(4px)}
+.bk-standard{background:rgba(0,0,0,.7);color:#fff;border:1px solid rgba(255,255,255,.3)}
+[data-theme="light"] .bk-standard{background:rgba(0,0,0,.8);color:#fff;border:none}
+.bk-high{background:rgba(0,0,0,.7);color:#fff;border:1px solid rgba(255,255,255,.3)}
+[data-theme="light"] .bk-high{background:rgba(0,0,0,.8);color:#fff;border:none}
+.bk-max{background:rgba(200,162,78,.9);color:#000;border:none}
+[data-theme="light"] .bk-max{background:#000;color:#fff}
+.chdg{position:absolute;top:10px;right:10px;padding:4px 9px;border-radius:5px;font-family:var(--fn);font-size:.95rem;background:rgba(0,0,0,.75);color:var(--gold);letter-spacing:1px;z-index:2;backdrop-filter:blur(4px)}
+[data-theme="light"] .chdg{background:rgba(0,0,0,.85);color:#fff}
 .cby{padding:14px;display:flex;flex-direction:column;flex:1}
 .cn{font-family:var(--fh);font-size:.88rem;font-weight:800;color:var(--text);text-transform:uppercase;letter-spacing:.3px;margin-bottom:3px}
+[data-theme="light"] .cn{color:#000}
 .cy{font-size:.7rem;color:var(--text3);margin-bottom:10px}
+[data-theme="light"] .cy{color:#555}
 .csp{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:10px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);margin-bottom:10px}
+[data-theme="light"] .csp{border-color:#ddd}
 .csi{text-align:center}
 .csic{color:var(--gold);margin-bottom:2px;display:flex;justify-content:center}
+[data-theme="light"] .csic{color:#000}
 .csv{font-size:.66rem;color:var(--text2);font-weight:700}
+[data-theme="light"] .csv{color:#111}
 .csl{font-size:.54rem;color:var(--text3);text-transform:uppercase;letter-spacing:.3px;margin-top:1px}
+[data-theme="light"] .csl{color:#555}
 .cf{display:flex;align-items:center;justify-content:space-between;margin-top:auto}
 .cp{font-family:var(--fn);font-size:1.35rem;color:var(--text);letter-spacing:1px;line-height:1}
+[data-theme="light"] .cp{color:#000}
 .cp small{font-family:var(--fh);font-size:.55rem;color:var(--text3);font-weight:400;margin-left:2px;display:block;margin-top:2px;letter-spacing:.3px}
+[data-theme="light"] .cp small{color:#555}
 .bd{padding:8px 14px;border-radius:6px;background:var(--text);color:var(--bg);font-size:.68rem;font-weight:800;transition:var(--t);text-transform:uppercase;letter-spacing:.5px}
+[data-theme="light"] .bd{background:#000;color:#fff}
 .bd:hover{background:var(--gold);color:#000}
+[data-theme="light"] .bd:hover{background:#333;color:#fff}
+
+/* Sale ribbon */
+.sale-chip{position:absolute;bottom:10px;left:10px;background:var(--btn-primary-bg);color:var(--btn-primary-text);font-size:.6rem;font-weight:800;letter-spacing:.5px;text-transform:uppercase;padding:3px 9px;border-radius:4px;z-index:3}
 
 /* ========== CALCULATOR ========== */
 .calc-box{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:20px;margin-top:24px;display:grid;gap:18px}
+[data-theme="light"] .calc-box{border-color:#ccc;box-shadow:0 2px 16px rgba(0,0,0,.07)}
 @media(min-width:900px){.calc-box{grid-template-columns:1.3fr 1fr;padding:28px}}
 .calc-left{display:flex;flex-direction:column;gap:16px}
 .calc-fg{display:flex;flex-direction:column;gap:6px}
 .calc-lb{font-size:.66rem;font-weight:800;color:var(--text2);text-transform:uppercase;letter-spacing:1px}
+[data-theme="light"] .calc-lb{color:#111}
 .calc-in{padding:11px 12px;border:1px solid var(--border);border-radius:8px;background:var(--bg2);color:var(--text);font-size:.85rem;font-weight:600;transition:var(--t);outline:none}
+[data-theme="light"] .calc-in{background:#f5f5f5;color:#000;border-color:#bbb}
 .calc-in:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(200,162,78,.15)}
+[data-theme="light"] .calc-in:focus{border-color:#000;box-shadow:0 0 0 3px rgba(0,0,0,.08)}
 .calc-rg{display:grid;grid-template-columns:1fr;gap:6px}
 @media(min-width:500px){.calc-rg{grid-template-columns:repeat(3,1fr)}}
 .calc-rb{padding:10px 10px;border:1px solid var(--border);border-radius:8px;background:var(--bg2);cursor:pointer;transition:var(--t);text-align:center}
+[data-theme="light"] .calc-rb{background:#f5f5f5;border-color:#ccc;color:#111}
 .calc-rb.on{border-color:var(--gold);background:rgba(200,162,78,.08);color:var(--gold)}
+[data-theme="light"] .calc-rb.on{border-color:#000;background:#000;color:#fff}
 .calc-rb-t{font-size:.72rem;font-weight:700;display:block;margin-bottom:2px}
 .calc-rb-s{font-size:.6rem;color:var(--text3)}
-.calc-rb.on .calc-rb-s{color:var(--gold)}
-.calc-cb{display:flex;align-items:center;gap:8px;padding:9px 11px;border:1px solid var(--border);border-radius:8px;background:var(--bg2);cursor:pointer;transition:var(--t);font-size:.75rem;font-weight:600}
+[data-theme="light"] .calc-rb-s{color:#555}
+[data-theme="light"] .calc-rb.on .calc-rb-s{color:#ccc}
+.calc-cb{display:flex;align-items:center;gap:8px;padding:9px 11px;border:1px solid var(--border);border-radius:8px;background:var(--bg2);cursor:pointer;transition:var(--t);font-size:.75rem;font-weight:600;color:var(--text)}
+[data-theme="light"] .calc-cb{background:#f5f5f5;border-color:#ccc;color:#111}
 .calc-cb.on{border-color:var(--gold);background:rgba(200,162,78,.08)}
+[data-theme="light"] .calc-cb.on{border-color:#000;background:#f0f0f0}
 .calc-cb input{width:16px;height:16px;accent-color:var(--gold);cursor:pointer}
+[data-theme="light"] .calc-cb input{accent-color:#000}
 .calc-cb.dis{opacity:.6;cursor:default}
 .calc-cbl-s{display:block;font-size:.6rem;color:var(--text3);margin-top:1px}
-.calc-right{background:linear-gradient(135deg,rgba(200,162,78,.08),rgba(200,162,78,.02));border:1px solid var(--gold2);border-radius:var(--r);padding:18px;display:flex;flex-direction:column;gap:10px}
+[data-theme="light"] .calc-cbl-s{color:#555}
+.calc-right{background:var(--bg3);border:1px solid var(--border);border-radius:var(--r);padding:18px;display:flex;flex-direction:column;gap:10px}
+[data-theme="light"] .calc-right{background:#f5f5f5;border-color:#ccc}
 .calc-rt{font-size:.66rem;font-weight:800;color:var(--gold);text-transform:uppercase;letter-spacing:1.5px}
+[data-theme="light"] .calc-rt{color:#000}
 .calc-rs{display:flex;flex-direction:column;gap:5px;padding-bottom:10px;border-bottom:1px dashed var(--border)}
+[data-theme="light"] .calc-rs{border-color:#bbb}
 .calc-row{display:flex;justify-content:space-between;font-size:.74rem;color:var(--text2)}
+[data-theme="light"] .calc-row{color:#333}
 .calc-row span:last-child{color:var(--text);font-weight:700}
+[data-theme="light"] .calc-row span:last-child{color:#000}
 .calc-total{font-family:var(--fn);font-size:clamp(2rem,5vw,2.9rem);color:var(--text);line-height:1;letter-spacing:1.5px;padding-top:6px}
+[data-theme="light"] .calc-total{color:#000}
 .calc-total small{font-family:var(--fh);font-size:.78rem;color:var(--gold);font-weight:700;display:block;margin-top:3px;letter-spacing:.5px}
-.calc-btn{padding:12px;border-radius:8px;background:var(--gold);color:#000;font-weight:800;font-size:.8rem;letter-spacing:.5px;text-transform:uppercase;transition:var(--t);margin-top:auto}
-.calc-btn:hover{background:var(--text);color:var(--bg)}
+[data-theme="light"] .calc-total small{color:#444}
+.calc-btn{padding:12px;border-radius:8px;background:var(--btn-primary-bg);color:var(--btn-primary-text);font-weight:800;font-size:.8rem;letter-spacing:.5px;text-transform:uppercase;transition:var(--t);margin-top:auto}
+.calc-btn:hover{background:var(--btn-primary-hover-bg);color:var(--btn-primary-hover-text)}
 .calc-note{font-size:.66rem;color:var(--text3);text-align:center}
+[data-theme="light"] .calc-note{color:#555}
 
 /* ========== ADVANTAGES ========== */
 .ag{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px}
 @media(min-width:700px){.ag{grid-template-columns:repeat(4,1fr);gap:14px}}
 .ac{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:18px 14px;transition:var(--t);position:relative;overflow:hidden}
+[data-theme="light"] .ac{border-color:#ddd;box-shadow:0 2px 10px rgba(0,0,0,.05)}
 .ac:hover{border-color:var(--gold);transform:translateY(-2px)}
+[data-theme="light"] .ac:hover{border-color:#000}
 .ac::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:var(--t)}
+[data-theme="light"] .ac::before{background:#000}
 .ac:hover::before{transform:scaleX(1)}
 .ai{width:36px;height:36px;border-radius:8px;background:rgba(200,162,78,.1);display:flex;align-items:center;justify-content:center;color:var(--gold);margin-bottom:10px}
-.ac h3{font-size:.78rem;font-weight:800;margin-bottom:4px;text-transform:uppercase;letter-spacing:.3px}
+[data-theme="light"] .ai{background:#eee;color:#000}
+.ac h3{font-size:.78rem;font-weight:800;margin-bottom:4px;text-transform:uppercase;letter-spacing:.3px;color:var(--text)}
+[data-theme="light"] .ac h3{color:#000}
 .ac p{font-size:.7rem;color:var(--text3);line-height:1.45}
+[data-theme="light"] .ac p{color:#444}
 
 /* ========== WORKS GALLERY ========== */
 .wg{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:22px}
 @media(min-width:700px){.wg{grid-template-columns:repeat(3,1fr);gap:12px}}
 @media(min-width:1000px){.wg{grid-template-columns:repeat(4,1fr)}}
-.wi{position:relative;aspect-ratio:1/1;border-radius:10px;overflow:hidden;cursor:pointer;background:linear-gradient(135deg,#1a1a1a,#252525);border:1px solid var(--border);transition:var(--t)}
-[data-theme="light"] .wi{background:linear-gradient(135deg,#eee,#f8f8f8)}
+.wi{position:relative;aspect-ratio:1/1;border-radius:10px;overflow:hidden;cursor:pointer;background:var(--bg3);border:1px solid var(--border);transition:var(--t)}
+[data-theme="light"] .wi{border-color:#ddd}
 .wi:hover{transform:scale(1.02);border-color:var(--gold)}
-.wi svg{width:100%;height:100%;transition:.5s ease}
-.wi:hover svg{transform:scale(1.08)}
+[data-theme="light"] .wi:hover{border-color:#000}
+.wi img{width:100%;height:100%;object-fit:cover;display:block;transition:.5s ease}
+.wi:hover img{transform:scale(1.08)}
 .wi-cap{position:absolute;left:0;right:0;bottom:0;padding:10px;background:linear-gradient(to top,rgba(0,0,0,.9),transparent);color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.3px}
 
 /* ========== CONDITIONS ========== */
 .cog{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px}
 @media(min-width:768px){.cog{grid-template-columns:repeat(3,1fr);gap:14px}}
 .co{padding:18px 14px;border:1px solid var(--border);border-radius:var(--r);transition:var(--t);background:var(--card)}
+[data-theme="light"] .co{border-color:#ddd;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.05)}
 .co:hover{border-color:var(--gold)}
+[data-theme="light"] .co:hover{border-color:#000}
 .conum{display:inline-flex;width:28px;height:28px;align-items:center;justify-content:center;background:var(--bg3);color:var(--gold);font-family:var(--fn);font-size:1rem;border-radius:6px;margin-bottom:8px;letter-spacing:1px}
-.co h3{font-size:.8rem;font-weight:800;margin-bottom:4px;text-transform:uppercase;letter-spacing:.3px}
+[data-theme="light"] .conum{background:#eee;color:#000}
+.co h3{font-size:.8rem;font-weight:800;margin-bottom:4px;text-transform:uppercase;letter-spacing:.3px;color:var(--text)}
+[data-theme="light"] .co h3{color:#000}
 .co p{font-size:.72rem;color:var(--text3);line-height:1.5}
+[data-theme="light"] .co p{color:#444}
 
 /* ========== FAQ ========== */
 .fq{margin-top:22px;display:flex;flex-direction:column;gap:8px}
 .fqi{background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;transition:var(--t)}
+[data-theme="light"] .fqi{border-color:#ddd;background:#fff}
 .fqi.on{border-color:var(--gold2)}
+[data-theme="light"] .fqi.on{border-color:#000}
 .fqq{padding:14px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;font-size:.82rem;font-weight:700;color:var(--text);text-align:left;width:100%}
+[data-theme="light"] .fqq{color:#000}
 .fqq:hover{color:var(--gold)}
+[data-theme="light"] .fqq:hover{color:#333}
 .fqi-ic{width:22px;height:22px;flex-shrink:0;border-radius:50%;background:var(--bg3);color:var(--gold);display:flex;align-items:center;justify-content:center;font-size:1rem;transition:var(--t)}
+[data-theme="light"] .fqi-ic{background:#eee;color:#000}
 .fqi.on .fqi-ic{background:var(--gold);color:#000;transform:rotate(45deg)}
+[data-theme="light"] .fqi.on .fqi-ic{background:#000;color:#fff}
 .fqa{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.25,.1,.25,1)}
 .fqa-in{padding:0 16px 16px;color:var(--text2);font-size:.78rem;line-height:1.6}
+[data-theme="light"] .fqa-in{color:#222}
 
 /* ========== CTA ========== */
 .cta{padding:50px 0;background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);text-align:center;position:relative;overflow:hidden}
+[data-theme="light"] .cta{background:#f5f5f5}
 .cta::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 20% 30%,rgba(200,162,78,.08),transparent 40%),radial-gradient(circle at 80% 70%,rgba(200,162,78,.06),transparent 45%);pointer-events:none}
+[data-theme="light"] .cta::before{background:none}
 .cta > *{position:relative}
 .ctab{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:22px}
 .bwa{display:inline-flex;align-items:center;gap:6px;padding:13px 24px;border-radius:var(--r);background:#25D366;color:#fff;font-weight:700;font-size:.8rem;transition:var(--t)}
@@ -250,33 +361,49 @@ input,textarea,select{font-family:inherit}
 .btg{display:inline-flex;align-items:center;gap:6px;padding:13px 24px;border-radius:var(--r);background:#229ED9;color:#fff;font-weight:700;font-size:.8rem;transition:var(--t)}
 .btg:hover{opacity:.9;transform:translateY(-2px)}
 .bcl{display:inline-flex;align-items:center;gap:6px;padding:13px 24px;border-radius:var(--r);border:1px solid var(--border);color:var(--text);font-weight:600;font-size:.8rem;transition:var(--t);background:var(--card)}
+[data-theme="light"] .bcl{color:#000;border-color:#999;background:#fff}
 .bcl:hover{border-color:var(--gold);color:var(--gold)}
-.bbk{display:inline-flex;align-items:center;gap:6px;padding:13px 24px;border-radius:var(--r);background:var(--gold);color:#000;font-weight:800;font-size:.8rem;transition:var(--t);text-transform:uppercase;letter-spacing:.5px}
-.bbk:hover{background:var(--text);color:var(--bg);transform:translateY(-2px)}
+[data-theme="light"] .bcl:hover{border-color:#000;color:#000}
+.bbk{display:inline-flex;align-items:center;gap:6px;padding:13px 24px;border-radius:var(--r);background:var(--btn-primary-bg);color:var(--btn-primary-text);font-weight:800;font-size:.8rem;transition:var(--t);text-transform:uppercase;letter-spacing:.5px}
+.bbk:hover{background:var(--btn-primary-hover-bg);color:var(--btn-primary-hover-text);transform:translateY(-2px)}
 
 /* ========== FOOTER ========== */
 .ft{padding:36px 0 80px;background:var(--bg);border-top:1px solid var(--border)}
+[data-theme="light"] .ft{background:#fff}
 @media(min-width:1024px){.ft{padding-bottom:18px}}
 .ftg{display:grid;grid-template-columns:1fr;gap:24px}
 @media(min-width:768px){.ftg{grid-template-columns:1.3fr 1fr 1fr}}
 .ft h4{font-size:.65rem;font-weight:800;margin-bottom:10px;letter-spacing:2px;text-transform:uppercase;color:var(--text2)}
+[data-theme="light"] .ft h4{color:#000}
 .ftl a{display:block;color:var(--text3);font-size:.78rem;padding:3px 0;transition:var(--t)}
+[data-theme="light"] .ftl a{color:#444}
 .ftl a:hover{color:var(--gold)}
+[data-theme="light"] .ftl a:hover{color:#000}
 .ftc a{display:flex;align-items:center;gap:5px;color:var(--text3);font-size:.78rem;padding:3px 0;transition:var(--t)}
+[data-theme="light"] .ftc a{color:#444}
 .ftc a:hover{color:var(--gold)}
+[data-theme="light"] .ftc a:hover{color:#000}
 .ftb{margin-top:24px;padding-top:14px;border-top:1px solid var(--border);display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center}
 .ftcp{font-size:.7rem;color:var(--text3)}
+[data-theme="light"] .ftcp{color:#444}
 .ftdv{font-size:.66rem;color:var(--text3)}
+[data-theme="light"] .ftdv{color:#444}
 .ftdv a{color:var(--gold);font-weight:800}
-.ftlogo{display:flex;align-items:center;gap:8px;font-family:var(--fn);font-size:1.3rem;letter-spacing:2px;color:var(--text);margin-bottom:10px}
-.ftlogo svg{width:28px;height:28px;color:var(--gold)}
+[data-theme="light"] .ftdv a{color:#000;text-decoration:underline}
+.ftlogo{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.ftlogo-img{height:32px;width:auto}
+.ftlogo-text{font-family:var(--fn);font-size:1.3rem;letter-spacing:2px;color:var(--text)}
+[data-theme="light"] .ftlogo-text{color:#000}
 .ftdsc{font-size:.75rem;color:var(--text3);line-height:1.6;max-width:300px}
+[data-theme="light"] .ftdsc{color:#444}
 
 /* ========== MOBILE BOTTOM BAR ========== */
 .botb{position:fixed;bottom:0;left:0;right:0;background:var(--glass);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-top:1px solid var(--border);z-index:800;display:flex;padding:6px 6px calc(6px + env(safe-area-inset-bottom,0px));gap:5px}
 @media(min-width:1024px){.botb{display:none}}
 .bbb{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;padding:6px 0;color:var(--text3);font-size:.55rem;font-weight:700;transition:var(--t);position:relative;text-transform:uppercase;letter-spacing:.3px;border-radius:9px}
+[data-theme="light"] .bbb{color:#444}
 .bbb:hover{color:var(--text)}
+[data-theme="light"] .bbb:hover{color:#000}
 .bbb svg{width:20px;height:20px}
 .bbb-call{background:linear-gradient(135deg,#2962FF,#1E88E5);color:#fff;box-shadow:0 3px 12px rgba(41,98,255,.45);animation:pulseCall 2.4s ease-in-out infinite}
 .bbb-call:hover{background:linear-gradient(135deg,#1E88E5,#1565C0);color:#fff;transform:translateY(-2px)}
@@ -290,15 +417,18 @@ body{padding-bottom:64px}
 
 /* ========== SCROLL UP ========== */
 .su{position:fixed;bottom:78px;right:14px;width:40px;height:40px;border-radius:50%;background:var(--text);color:var(--bg);display:flex;align-items:center;justify-content:center;z-index:850;opacity:0;pointer-events:none;transition:var(--t);box-shadow:0 2px 10px rgba(0,0,0,.3)}
+[data-theme="light"] .su{background:#000;color:#fff}
 @media(min-width:1024px){.su{bottom:20px;right:20px}}
 .su.sh{opacity:1;pointer-events:auto}
 .su:hover{background:var(--gold);color:#000;transform:scale(1.1)}
+[data-theme="light"] .su:hover{background:#333;color:#fff}
 .su svg{width:18px;height:18px}
 
 /* ========== MODALS ========== */
 .mov{position:fixed;inset:0;background:var(--overlay);backdrop-filter:blur(4px);z-index:2000;opacity:0;pointer-events:none;transition:var(--t)}
 .mov.on{opacity:1;pointer-events:auto}
 .mbx{position:fixed;z-index:2001;background:var(--bg);overflow-y:auto;inset:0;transform:translateY(100%);opacity:0;pointer-events:none;transition:.4s cubic-bezier(.4,0,.2,1)}
+[data-theme="light"] .mbx{background:#fff;border-color:#ccc}
 .mbx.on{transform:translateY(0);opacity:1;pointer-events:auto}
 @media(min-width:768px){.mbx{inset:auto;top:50%;left:50%;transform:translate(-50%,-50%) scale(.95);width:90vw;max-height:90vh;border-radius:14px;border:1px solid var(--border)}.mbx.on{transform:translate(-50%,-50%) scale(1)}}
 .mbx.dm{z-index:2001}
@@ -307,55 +437,79 @@ body{padding-bottom:64px}
 @media(min-width:768px){.mbx.bm{max-width:480px}}
 .mov.bo2{z-index:4000}
 .mcl{position:absolute;top:10px;right:10px;z-index:10;width:34px;height:34px;border-radius:50%;background:rgba(0,0,0,.5);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1rem;transition:var(--t);border:none}
-.mcl:hover{background:#e53935}
-.mg{position:relative;aspect-ratio:16/10;background:linear-gradient(135deg,#1a1a1a,#252525);overflow:hidden}
-[data-theme="light"] .mg{background:linear-gradient(135deg,#eee,#f8f8f8)}
-.mg svg{width:100%;height:100%}
+[data-theme="light"] .mcl{background:rgba(0,0,0,.15);color:#000}
+.mcl:hover{background:#e53935;color:#fff}
+.mg{position:relative;aspect-ratio:16/10;background:var(--bg3);overflow:hidden}
+.mg img{width:100%;height:100%;object-fit:cover;display:block}
 .mbd{padding:18px 14px 24px}
 @media(min-width:768px){.mbd{padding:22px 24px 28px}}
 .mcs{display:inline-block;padding:4px 9px;border-radius:5px;font-size:.6rem;font-weight:800;letter-spacing:.5px;text-transform:uppercase}
 .mcn{font-family:var(--fh);font-size:1.25rem;font-weight:900;color:var(--text);margin-top:5px;text-transform:uppercase;letter-spacing:.5px}
+[data-theme="light"] .mcn{color:#000}
 @media(min-width:768px){.mcn{font-size:1.6rem}}
 .mpb{display:flex;align-items:baseline;gap:6px;margin-top:10px;padding:11px 14px;background:var(--bg3);border-radius:var(--r);border-left:3px solid var(--gold)}
+[data-theme="light"] .mpb{background:#f5f5f5;border-color:#000}
 .mpr{font-family:var(--fn);font-size:1.8rem;color:var(--text);letter-spacing:1px}
+[data-theme="light"] .mpr{color:#000}
 .mpu{font-size:.75rem;color:var(--text3)}
+[data-theme="light"] .mpu{color:#555}
 .msp{display:grid;grid-template-columns:repeat(2,1fr);gap:7px;margin-top:14px}
 @media(min-width:480px){.msp{grid-template-columns:repeat(3,1fr)}}
 .ms{display:flex;align-items:center;gap:8px;padding:9px 10px;background:var(--bg2);border-radius:7px;border:1px solid var(--border)}
+[data-theme="light"] .ms{background:#f5f5f5;border-color:#ddd}
 .msi{color:var(--gold);flex-shrink:0}
+[data-theme="light"] .msi{color:#000}
 .msl{font-size:.56rem;color:var(--text3);text-transform:uppercase;letter-spacing:.4px}
+[data-theme="light"] .msl{color:#555}
 .msv{font-size:.74rem;font-weight:700;color:var(--text)}
+[data-theme="light"] .msv{color:#000}
 .mds{margin-top:14px;padding:13px 14px;background:var(--bg2);border-radius:8px;font-size:.78rem;color:var(--text2);line-height:1.6;border:1px solid var(--border)}
+[data-theme="light"] .mds{background:#f5f5f5;border-color:#ddd;color:#222}
 .mds strong{color:var(--gold);font-weight:800;display:block;margin-bottom:5px;font-size:.65rem;text-transform:uppercase;letter-spacing:1px}
+[data-theme="light"] .mds strong{color:#000}
 .mac{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:14px}
 @media(min-width:560px){.mac{grid-template-columns:repeat(4,1fr)}}
 .ma{padding:11px 10px;border-radius:8px;font-weight:800;font-size:.68rem;text-align:center;transition:var(--t);display:flex;align-items:center;justify-content:center;gap:4px;text-transform:uppercase;letter-spacing:.3px}
-.ma1{background:var(--gold);color:#000}
-.ma1:hover{background:var(--text);color:var(--bg)}
+.ma1{background:var(--btn-primary-bg);color:var(--btn-primary-text)}
+.ma1:hover{background:var(--btn-primary-hover-bg);color:var(--btn-primary-hover-text)}
 .ma2{background:var(--bg3);color:var(--text);border:1px solid var(--border)}
+[data-theme="light"] .ma2{background:#eee;color:#000;border-color:#ccc}
 .ma2:hover{border-color:var(--gold)}
+[data-theme="light"] .ma2:hover{border-color:#000;background:#ddd}
 .ma3{background:#25D366;color:#fff}
 .ma3:hover{opacity:.9}
 .ma4{background:var(--bg3);color:var(--text2);border:1px solid var(--border)}
+[data-theme="light"] .ma4{background:#eee;color:#333;border-color:#ccc}
 .ma4:hover{border-color:var(--gold);color:var(--gold)}
+[data-theme="light"] .ma4:hover{border-color:#000;color:#000}
 
 /* ========== BOOKING MODAL ========== */
 .bkh{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:1px solid var(--border)}
-.bkh h2{font-family:var(--fh);font-size:.95rem;font-weight:900;text-transform:uppercase;letter-spacing:.5px}
+.bkh h2{font-family:var(--fh);font-size:.95rem;font-weight:900;text-transform:uppercase;letter-spacing:.5px;color:var(--text)}
+[data-theme="light"] .bkh h2{color:#000}
 .bkf{padding:18px;display:flex;flex-direction:column;gap:12px}
 .fg{display:flex;flex-direction:column;gap:4px}
 .fg label{font-size:.66rem;font-weight:800;color:var(--text2);text-transform:uppercase;letter-spacing:.8px}
+[data-theme="light"] .fg label{color:#111}
 .fg input,.fg textarea,.fg select{padding:10px 11px;border:1px solid var(--border);border-radius:7px;font-size:.84rem;background:var(--bg2);color:var(--text);transition:var(--t);outline:none;font-weight:500}
+[data-theme="light"] .fg input,[data-theme="light"] .fg textarea,[data-theme="light"] .fg select{background:#f5f5f5;color:#000;border-color:#bbb}
 .fg input:focus,.fg textarea:focus,.fg select:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(200,162,78,.15)}
+[data-theme="light"] .fg input:focus,[data-theme="light"] .fg textarea:focus,[data-theme="light"] .fg select:focus{border-color:#000;box-shadow:0 0 0 3px rgba(0,0,0,.08)}
 .fg textarea{resize:vertical;min-height:70px}
 .fg-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.bsb{padding:12px;border-radius:8px;background:var(--gold);color:#000;font-weight:800;font-size:.85rem;transition:var(--t);text-transform:uppercase;letter-spacing:.5px}
-.bsb:hover{background:var(--text);color:var(--bg)}
+.bsb{padding:12px;border-radius:8px;background:var(--btn-primary-bg);color:var(--btn-primary-text);font-weight:800;font-size:.85rem;transition:var(--t);text-transform:uppercase;letter-spacing:.5px}
+.bsb:hover{background:var(--btn-primary-hover-bg);color:var(--btn-primary-hover-text)}
 .bk-suc{padding:30px 20px;text-align:center;display:none}
 .bk-suc.on{display:block}
 .bk-suc-ic{width:60px;height:60px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
-.bk-suc h3{font-size:1.1rem;font-weight:800;margin-bottom:6px}
+.bk-suc h3{font-size:1.1rem;font-weight:800;margin-bottom:6px;color:var(--text)}
+[data-theme="light"] .bk-suc h3{color:#000}
 .bk-suc p{color:var(--text2);font-size:.85rem}
+[data-theme="light"] .bk-suc p{color:#333}
+
+/* Discount note */
+.discount-note{display:inline-flex;align-items:center;gap:6px;background:rgba(200,162,78,.12);border:1px solid var(--gold2);border-radius:8px;padding:10px 14px;font-size:.76rem;color:var(--gold);font-weight:700;margin-top:4px}
+[data-theme="light"] .discount-note{background:#f0f0f0;border-color:#999;color:#000}
 
 .reveal{opacity:0;transform:translateY(18px);transition:.5s cubic-bezier(.25,.1,.25,1)}
 .reveal.vis{opacity:1;transform:translateY(0)}
@@ -366,8 +520,10 @@ body{padding-bottom:64px}
 <!-- ================== HEADER ================== -->
 <header class="hdr"><div class="con hdr-in">
   <a href="#" class="logo">
-    <svg class="logo-ic" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 28h24M6 28V14l4-2 4 8M14 20l10-10M24 10l2 2-2 2-2-2zM10 12V8h4"/></svg>
-    ALMATY<span style="color:var(--gold)">LIFT</span>
+    <!-- Если есть логотип: -->
+    <img src="images/logo.png" alt="Автовышки Алматы" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <!-- Текстовый фолбэк (скрыт если картинка загружена) -->
+    <span class="logo-text" style="display:none">ALMATY<span style="color:var(--gold)">LIFT</span></span>
   </a>
   <nav class="nav-d">
     <a href="#fleet" data-i18n="nav_fleet">Техника</a>
@@ -415,16 +571,16 @@ body{padding-bottom:64px}
   <div class="hero-grid-pattern"></div>
   <div class="con hero-in">
     <div>
-      <div class="hero-badge" data-i18n="hero_badge">Выезд за 1 час по Алматы</div>
-      <h1 class="hero-h1"><span data-i18n="hero_h1_1">Аренда автовышки</span><br><span class="hl" data-i18n="hero_h1_2">от 14 до 28 метров</span></h1>
+      <div class="hero-badge" data-i18n="hero_badge">Скидка до 10% при заказе</div>
+      <h1 class="hero-h1"><span data-i18n="hero_h1_1">Аренда автовышки</span><br><span class="hl" data-i18n="hero_h1_2">от 16 до 35 метров</span></h1>
       <p class="hero-sub" data-i18n="hero_sub">Японская техника, допущенные операторы, полный комплект безопасности. Работаем круглосуточно — от частных задач до промышленных объектов.</p>
       <div class="hero-stats">
         <div class="hero-stat">
-          <div class="hero-stat-v">6</div>
-          <div class="hero-stat-l" data-i18n="hero_s1">Единиц техники</div>
+          <div class="hero-stat-v">3</div>
+          <div class="hero-stat-l" data-i18n="hero_s1">Класса техники</div>
         </div>
         <div class="hero-stat">
-          <div class="hero-stat-v">28 м</div>
+          <div class="hero-stat-v">35 м</div>
           <div class="hero-stat-l" data-i18n="hero_s2">Макс. высота</div>
         </div>
         <div class="hero-stat">
@@ -435,38 +591,30 @@ body{padding-bottom:64px}
       <div class="hero-cta">
         <button class="hbtn hbtn-1" onclick="openBk()">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-          <span data-i18n="hero_cta1">Заказать сейчас</span>
+          <span data-i18n="hero_cta1">Заказать со скидкой</span>
         </button>
         <a href="#calculator" class="hbtn hbtn-2">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="10" y2="10"/><line x1="12" y1="10" x2="14" y2="10"/><line x1="8" y1="14" x2="10" y2="14"/><line x1="12" y1="14" x2="14" y2="14"/><line x1="8" y1="18" x2="10" y2="18"/><line x1="12" y1="18" x2="14" y2="18"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="10" y2="10"/><line x1="12" y1="10" x2="14" y2="10"/><line x1="8" y1="14" x2="10" y2="14"/><line x1="12" y1="14" x2="14" y2="14"/></svg>
           <span data-i18n="hero_cta2">Рассчитать стоимость</span>
         </a>
       </div>
     </div>
-    <div class="hero-vis" id="heroVis"></div>
+    <!-- HERO IMAGE -->
+    <div class="hero-vis">
+      <img src="images/hero-main.jpg" alt="Автовышка в Алматы" loading="eager">
+      <div class="hero-vis-overlay"></div>
+      <div class="discount-badge">СКИДКА ДО 10%</div>
+    </div>
   </div>
 </section>
 
 <!-- ================== FLEET ================== -->
 <section class="sec" id="fleet"><div class="con">
   <div class="sl" data-i18n="lbl_fleet">Наш парк</div>
-  <h2 class="st reveal" data-i18n="hd_fleet">6 автовышек под любую задачу</h2>
-  <p class="ss reveal" data-i18n="sub_fleet">От компактной 14 м для дворовых работ до флагманской 28 м с вылетом 20 метров.</p>
-  <div class="flt reveal" id="flt">
-    <button class="fb on" data-filter="all" data-i18n="f_all">Все</button>
-    <button class="fb" data-filter="s" data-i18n="f_s">До 15 м</button>
-    <button class="fb" data-filter="m" data-i18n="f_m">До 20 м</button>
-    <button class="fb" data-filter="l" data-i18n="f_l">До 25 м</button>
-    <button class="fb" data-filter="xl" data-i18n="f_xl">25 м и выше</button>
-  </div>
+  <h2 class="st reveal" data-i18n="hd_fleet">3 класса автовышек</h2>
+  <p class="ss reveal" data-i18n="sub_fleet">От 16 м для городских работ до 35 м для высотных промышленных объектов. Минимальный заказ — 3 часа.</p>
   <div class="catbar reveal">
     <div class="ccnt" id="ccnt"></div>
-    <select class="ssel" id="ssel">
-      <option value="pa" data-i18n="s_pa">По цене ↑</option>
-      <option value="pd" data-i18n="s_pd">По цене ↓</option>
-      <option value="ha" data-i18n="s_ha">По высоте ↑</option>
-      <option value="hd" data-i18n="s_hd">По высоте ↓</option>
-    </select>
   </div>
   <div class="cg" id="cg"></div>
 </div></section>
@@ -475,7 +623,7 @@ body{padding-bottom:64px}
 <section class="sec" id="calculator" style="background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)"><div class="con">
   <div class="sl" data-i18n="lbl_calc">Онлайн-расчёт</div>
   <h2 class="st reveal" data-i18n="hd_calc">Калькулятор стоимости</h2>
-  <p class="ss reveal" data-i18n="sub_calc">Выберите технику и условия — увидите точную цену за секунду.</p>
+  <p class="ss reveal" data-i18n="sub_calc">Выберите технику и условия — увидите точную цену за секунду. При заказе — скидка до 10%.</p>
 
   <div class="calc-box reveal">
     <div class="calc-left">
@@ -485,9 +633,9 @@ body{padding-bottom:64px}
       </div>
 
       <div class="calc-fg">
-        <label class="calc-lb"><span data-i18n="calc_lb2">Количество часов</span> <span style="color:var(--gold);font-weight:700">— <span id="calcHrs">2</span> <span data-i18n="calc_hrs">ч</span></span></label>
-        <input type="range" id="calcHours" min="2" max="12" value="2" step="1" class="calc-in" style="padding:0;background:var(--bg2);accent-color:var(--gold);height:36px">
-        <div style="display:flex;justify-content:space-between;font-size:.62rem;color:var(--text3)"><span>2ч</span><span>12ч</span></div>
+        <label class="calc-lb"><span data-i18n="calc_lb2">Количество часов</span> <span style="color:var(--gold);font-weight:700">— <span id="calcHrs">3</span> <span data-i18n="calc_hrs">ч</span></span></label>
+        <input type="range" id="calcHours" min="3" max="12" value="3" step="1" class="calc-in" style="padding:0;background:var(--bg2);accent-color:var(--gold);height:36px">
+        <div style="display:flex;justify-content:space-between;font-size:.62rem;color:var(--text3)"><span id="calcMinLabel">3ч (мин)</span><span>12ч</span></div>
       </div>
 
       <div class="calc-fg">
@@ -505,6 +653,7 @@ body{padding-bottom:64px}
         <label class="calc-cb" data-extra="night"><input type="checkbox"><span><span data-i18n="calc_ad2">Ночная смена</span><span class="calc-cbl-s" data-i18n="calc_ad2s">22:00–06:00, коэф. ×1.3</span></span></label>
         <label class="calc-cb" data-extra="holiday"><input type="checkbox"><span><span data-i18n="calc_ad3">Выходной/праздник</span><span class="calc-cbl-s" data-i18n="calc_ad3s">Коэффициент ×1.2</span></span></label>
         <label class="calc-cb" data-extra="urgent"><input type="checkbox"><span><span data-i18n="calc_ad4">Срочный выезд</span><span class="calc-cbl-s" data-i18n="calc_ad4s">До 1 часа, +3 000 ₸</span></span></label>
+        <label class="calc-cb" data-extra="discount"><input type="checkbox"><span><span data-i18n="calc_ad5">Применить скидку 10%</span><span class="calc-cbl-s" data-i18n="calc_ad5s">При долгосрочном заказе</span></span></label>
       </div>
     </div>
 
@@ -512,7 +661,7 @@ body{padding-bottom:64px}
       <div class="calc-rt" data-i18n="calc_res">Итого к оплате</div>
       <div class="calc-rs" id="calcRows"></div>
       <div class="calc-total" id="calcTotal">0 ₸<small data-i18n="calc_est">Ориентировочная стоимость</small></div>
-      <button class="calc-btn" onclick="calcToBooking()" data-i18n="calc_btn">Оформить заявку</button>
+      <button class="calc-btn" onclick="calcToBooking()" data-i18n="calc_btn">Оформить заявку со скидкой</button>
       <div class="calc-note" data-i18n="calc_note">Точная цена — после подтверждения заявки</div>
     </div>
   </div>
@@ -549,7 +698,7 @@ body{padding-bottom:64px}
       <p data-i18n="adv5_d">Работаем в тёмное время без дополнительных прожекторов.</p>
     </div>
     <div class="ac reveal">
-      <div class="ai"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path d="M3 12l4-4M21 12l-4-4M12 3v4M12 21v-4"/></svg></div>
+      <div class="ai"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
       <h3 data-i18n="adv6_t">Поворотная корзина</h3>
       <p data-i18n="adv6_d">2 поста управления — сверху и снизу. Плавный ход стрелы и люльки.</p>
     </div>
@@ -560,8 +709,8 @@ body{padding-bottom:64px}
     </div>
     <div class="ac reveal">
       <div class="ai"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-      <h3 data-i18n="adv8_t">Безопасность</h3>
-      <p data-i18n="adv8_d">Конусы, сигнальные ленты, страховочные ремни и аутригеры — всё с собой.</p>
+      <h3 data-i18n="adv8_t">Скидка до 10%</h3>
+      <p data-i18n="adv8_d">Оформите заказ на сайте и получите скидку до 10% от стоимости.</p>
     </div>
   </div>
 </div></section>
@@ -579,11 +728,11 @@ body{padding-bottom:64px}
   <div class="sl" data-i18n="lbl_info">Информация</div>
   <h2 class="st reveal" data-i18n="hd_cond">Условия аренды</h2>
   <div class="cog">
-    <div class="co reveal"><div class="conum">1</div><h3 data-i18n="c1_t">Время</h3><p data-i18n="c1_d">Мин. заказ — 2 часа. Работаем 24/7 без выходных.</p></div>
+    <div class="co reveal"><div class="conum">1</div><h3 data-i18n="c1_t">Время</h3><p data-i18n="c1_d">Мин. заказ — 3 часа (28–35 м — от 4 часов). Работаем 24/7 без выходных.</p></div>
     <div class="co reveal"><div class="conum">2</div><h3 data-i18n="c2_t">Документы</h3><p data-i18n="c2_d">Для физлиц — удостоверение. Для юрлиц — реквизиты и договор.</p></div>
     <div class="co reveal"><div class="conum">3</div><h3 data-i18n="c3_t">Оплата</h3><p data-i18n="c3_d">Наличные, перевод на карту, Kaspi, безнал с НДС.</p></div>
     <div class="co reveal"><div class="conum">4</div><h3 data-i18n="c4_t">Подача</h3><p data-i18n="c4_d">По Алматы бесплатно, пригород и область — по тарифу.</p></div>
-    <div class="co reveal"><div class="conum">5</div><h3 data-i18n="c5_t">Оператор</h3><p data-i18n="c5_d">Всегда входит в стоимость. Работа без оператора не допускается.</p></div>
+    <div class="co reveal"><div class="conum">5</div><h3 data-i18n="c5_t">Скидка до 10%</h3><p data-i18n="c5_d">Оформите заявку через сайт — получите скидку до 10% от итоговой суммы.</p></div>
     <div class="co reveal"><div class="conum">6</div><h3 data-i18n="c6_t">Безопасность</h3><p data-i18n="c6_d">Конусы, ленты, ремни и аутригеры включены в комплект.</p></div>
   </div>
 </div></section>
@@ -598,7 +747,7 @@ body{padding-bottom:64px}
 <!-- ================== CTA ================== -->
 <section class="cta" id="contacts"><div class="con">
   <div class="sl" data-i18n="lbl_cta">Связаться</div>
-  <h2 class="st reveal" data-i18n="hd_cta">Закажите автовышку сейчас</h2>
+  <h2 class="st reveal" data-i18n="hd_cta">Закажите автовышку со скидкой до 10%</h2>
   <p class="ss reveal" style="margin:8px auto 0" data-i18n="cta_sub">Перезвоним и подтвердим заявку в течение 5 минут</p>
   <div class="ctab reveal">
     <a href="https://wa.me/77079009329" target="_blank" class="bwa">
@@ -613,7 +762,7 @@ body{padding-bottom:64px}
       <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
       +7 707 900 9329
     </a>
-    <button class="bbk" onclick="openBk()" data-i18n="order">Заказать</button>
+    <button class="bbk" onclick="openBk()" data-i18n="order">Заказать со скидкой</button>
   </div>
 </div></section>
 
@@ -622,10 +771,10 @@ body{padding-bottom:64px}
   <div class="ftg">
     <div>
       <div class="ftlogo">
-        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 28h24M6 28V14l4-2 4 8M14 20l10-10M24 10l2 2-2 2-2-2zM10 12V8h4"/></svg>
-        ALMATY<span style="color:var(--gold)">LIFT</span>
+        <img src="images/logo.png" alt="Автовышки Алматы" class="ftlogo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <span class="ftlogo-text" style="display:none">ALMATY<span style="color:var(--gold)">LIFT</span></span>
       </div>
-      <p class="ftdsc" data-i18n="ft_desc">Аренда автовышек 14–28 метров в Алматы и области. Японская техника, опытные операторы, работаем 24/7.</p>
+      <p class="ftdsc" data-i18n="ft_desc">Аренда автовышек 16–35 метров в Алматы и области. Японская техника, опытные операторы, работаем 24/7. Скидка до 10% при заказе.</p>
     </div>
     <div class="ftl">
       <h4 data-i18n="ft_nav">Навигация</h4>
@@ -689,6 +838,10 @@ body{padding-bottom:64px}
     <button class="mcl" style="position:relative;top:auto;right:auto;background:var(--bg3);color:var(--text2)" onclick="clBk()">✕</button>
   </div>
   <div class="bkf" id="bkForm">
+    <div class="discount-note">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+      <span data-i18n="bk_discount">Скидка до 10% при заказе через сайт</span>
+    </div>
     <div class="fg"><label data-i18n="bk_c">Техника</label><select id="bkc"></select></div>
     <div class="fg"><label data-i18n="bk_n">Ваше имя *</label><input id="bkn" type="text" placeholder="Иван"></div>
     <div class="fg"><label data-i18n="bk_p">Телефон *</label><input type="tel" id="bkp" placeholder="+7 ___ ___ __ __"></div>
@@ -696,7 +849,7 @@ body{padding-bottom:64px}
       <div class="fg"><label data-i18n="bk_d">Дата работ</label><input type="date" id="bkd"></div>
       <div class="fg"><label data-i18n="bk_tm">Время начала</label><input type="time" id="bktm"></div>
     </div>
-    <div class="fg"><label data-i18n="bk_y">Количество часов</label><input type="number" id="bky" min="2" value="2"></div>
+    <div class="fg"><label data-i18n="bk_y">Количество часов</label><input type="number" id="bky" min="3" value="3"></div>
     <div class="fg"><label data-i18n="bk_ad">Адрес объекта</label><input type="text" id="bkad" placeholder="ул. Абая, 10"></div>
     <div class="fg"><label data-i18n="bk_m">Комментарий</label><textarea id="bkm" placeholder="Опишите задачу"></textarea></div>
     <button class="bsb" onclick="subBk()" data-i18n="bk_sub">Отправить заявку в WhatsApp</button>
@@ -713,348 +866,205 @@ body{padding-bottom:64px}
 <script>
 /* =============== I18N =============== */
 const T={
-ru:{nav_fleet:"Техника",nav_calc:"Калькулятор",nav_adv:"Преимущества",nav_wrk:"Работы",nav_faq:"FAQ",nav_cont:"Контакты",order:"Заказать",mob_info1:"Аренда автовышек в Алматы. 24/7.",mob_info2:"г. Алматы, Казахстан",mob_dev:"Разработчик сайта —",
-hero_badge:"Выезд за 1 час по Алматы",hero_h1_1:"Аренда автовышки",hero_h1_2:"от 14 до 28 метров",hero_sub:"Японская техника, допущенные операторы, полный комплект безопасности. Работаем круглосуточно — от частных задач до промышленных объектов.",hero_s1:"Единиц техники",hero_s2:"Макс. высота",hero_s3:"Режим работы",hero_cta1:"Заказать сейчас",hero_cta2:"Рассчитать стоимость",
-lbl_fleet:"Наш парк",hd_fleet:"6 автовышек под любую задачу",sub_fleet:"От компактной 14 м для дворовых работ до флагманской 28 м с вылетом 20 метров.",f_all:"Все",f_s:"До 15 м",f_m:"До 20 м",f_l:"До 25 м",f_xl:"25 м и выше",s_pa:"По цене ↑",s_pd:"По цене ↓",s_ha:"По высоте ↑",s_hd:"По высоте ↓",cnt:"ед.",more:"Подробнее",per_h:"/ час",min_h:"мин. 2 часа",
-lbl_calc:"Онлайн-расчёт",hd_calc:"Калькулятор стоимости",sub_calc:"Выберите технику и условия — увидите точную цену за секунду.",calc_lb1:"Выбор техники",calc_lb2:"Количество часов",calc_hrs:"ч",calc_lb3:"Зона работ",calc_z1:"По городу",calc_z1s:"Подача бесплатно",calc_z2:"Пригород",calc_z3:"За городом",calc_lb4:"Дополнительно",calc_ad1:"Оператор включён",calc_ad1s:"Всегда бесплатно",calc_ad2:"Ночная смена",calc_ad2s:"22:00–06:00, коэф. ×1.3",calc_ad3:"Выходной/праздник",calc_ad3s:"Коэффициент ×1.2",calc_ad4:"Срочный выезд",calc_ad4s:"До 1 часа, +3 000 ₸",calc_res:"Итого к оплате",calc_est:"Ориентировочная стоимость",calc_btn:"Оформить заявку",calc_note:"Точная цена — после подтверждения заявки",calc_row_rate:"Тариф",calc_row_hrs:"Часов",calc_row_base:"Аренда техники",calc_row_deliv:"Доставка",calc_row_night:"Ночная смена (×1.3)",calc_row_holiday:"Выходной (×1.2)",calc_row_urgent:"Срочный выезд",
-lbl_why:"Почему мы",hd_adv:"Что входит в нашу работу",adv1_t:"Выезд за 1 час",adv1_d:"Подача техники по Алматы в течение 60 минут после звонка.",adv2_t:"Японская техника",adv2_d:"Isuzu, Hino, Mitsubishi, Nissan. Без подтёков масла, в отличном состоянии.",adv3_t:"Допущенные операторы",adv3_d:"Все с действующим допуском на автовышку и удостоверением люльщика.",adv4_t:"Диэлектрическая стрела",adv4_d:"Безопасная работа рядом с ЛЭП и высоковольтными линиями.",adv5_t:"Ночное освещение",adv5_d:"Работаем в тёмное время без дополнительных прожекторов.",adv6_t:"Поворотная корзина",adv6_d:"2 поста управления — сверху и снизу. Плавный ход стрелы и люльки.",adv7_t:"Лебёдка 500 кг",adv7_d:"Поднимаем грузы до полутонны, а не только людей.",adv8_t:"Безопасность",adv8_d:"Конусы, сигнальные ленты, страховочные ремни и аутригеры — всё с собой.",
-lbl_works:"Портфолио",hd_works:"Наши работы",sub_works:"Примеры объектов, на которых мы работали в Алматы и области.",
-lbl_info:"Информация",hd_cond:"Условия аренды",c1_t:"Время",c1_d:"Мин. заказ — 2 часа. Работаем 24/7 без выходных.",c2_t:"Документы",c2_d:"Для физлиц — удостоверение. Для юрлиц — реквизиты и договор.",c3_t:"Оплата",c3_d:"Наличные, перевод на карту, Kaspi, безнал с НДС.",c4_t:"Подача",c4_d:"По Алматы бесплатно, пригород и область — по тарифу.",c5_t:"Оператор",c5_d:"Всегда входит в стоимость. Работа без оператора не допускается.",c6_t:"Безопасность",c6_d:"Конусы, ленты, ремни и аутригеры включены в комплект.",
-lbl_faq:"FAQ",hd_faq:"Частые вопросы",
-lbl_cta:"Связаться",hd_cta:"Закажите автовышку сейчас",cta_sub:"Перезвоним и подтвердим заявку в течение 5 минут",
-ft_desc:"Аренда автовышек 14–28 метров в Алматы и области. Японская техника, опытные операторы, работаем 24/7.",ft_nav:"Навигация",ft_cont:"Контакты",ft_dev:"Разработчик —",ft_addr:"г. Алматы, Казахстан",
-bb_fleet:"Техника",bb_calc:"Расчёт",bb_call:"Звонок",
-sp_h:"Высота",sp_r:"Вылет",sp_cap:"Грузопод.",sp_base:"База",sp_cat:"Класс",sp_extra:"Опции",sp_price:"Цена",sp_winch:"Лебёдка",sp_post:"Посты",sp_light:"Освещение",sp_diel:"Диэл. стрела",
-m_book:"Заказать",m_call:"Позвонить",m_wa:"WhatsApp",m_calc:"В калькулятор",
-bk_t:"Заявка на аренду",bk_c:"Техника",bk_n:"Ваше имя *",bk_p:"Телефон *",bk_d:"Дата работ",bk_tm:"Время начала",bk_y:"Количество часов",bk_ad:"Адрес объекта",bk_m:"Комментарий",bk_sub:"Отправить заявку в WhatsApp",bk_ok1:"Заявка отправлена!",bk_ok2:"Мы свяжемся с вами в течение 5 минут для подтверждения.",
-a_fill:"Пожалуйста, заполните имя и телефон",a_req:"Заявка на автовышку",a_tech:"Техника",a_name:"Имя",a_phone:"Телефон",a_date:"Дата",a_time:"Время",a_hrs:"Часов",a_addr:"Адрес",a_com:"Комментарий",a_calc_pref:"Расчёт с сайта"
+ru:{
+  nav_fleet:"Техника",nav_calc:"Калькулятор",nav_adv:"Преимущества",nav_wrk:"Работы",nav_faq:"FAQ",nav_cont:"Контакты",order:"Заказать",
+  mob_info1:"Аренда автовышек в Алматы. 24/7.",mob_info2:"г. Алматы, Казахстан",mob_dev:"Разработчик сайта —",
+  hero_badge:"Скидка до 10% при заказе",hero_h1_1:"Аренда автовышки",hero_h1_2:"от 16 до 35 метров",
+  hero_sub:"Японская техника, допущенные операторы, полный комплект безопасности. Работаем круглосуточно — от частных задач до промышленных объектов.",
+  hero_s1:"Класса техники",hero_s2:"Макс. высота",hero_s3:"Режим работы",
+  hero_cta1:"Заказать со скидкой",hero_cta2:"Рассчитать стоимость",
+  lbl_fleet:"Наш парк",hd_fleet:"3 класса автовышек",sub_fleet:"От 16 м для городских работ до 35 м для высотных промышленных объектов. Минимальный заказ — 3 часа.",
+  cnt:"ед.",more:"Подробнее",per_h:"/ час",min_h3:"мин. 3 часа",min_h4:"мин. 4 часа",
+  lbl_calc:"Онлайн-расчёт",hd_calc:"Калькулятор стоимости",sub_calc:"Выберите технику и условия — увидите точную цену за секунду. При заказе — скидка до 10%.",
+  calc_lb1:"Выбор техники",calc_lb2:"Количество часов",calc_hrs:"ч",
+  calc_lb3:"Зона работ",calc_z1:"По городу",calc_z1s:"Подача бесплатно",calc_z2:"Пригород",calc_z3:"За городом",
+  calc_lb4:"Дополнительно",calc_ad1:"Оператор включён",calc_ad1s:"Всегда бесплатно",
+  calc_ad2:"Ночная смена",calc_ad2s:"22:00–06:00, коэф. ×1.3",calc_ad3:"Выходной/праздник",calc_ad3s:"Коэффициент ×1.2",
+  calc_ad4:"Срочный выезд",calc_ad4s:"До 1 часа, +3 000 ₸",calc_ad5:"Применить скидку 10%",calc_ad5s:"При долгосрочном заказе",
+  calc_res:"Итого к оплате",calc_est:"Ориентировочная стоимость",calc_btn:"Оформить заявку со скидкой",calc_note:"Точная цена — после подтверждения заявки",
+  calc_row_rate:"Тариф",calc_row_hrs:"Часов",calc_row_base:"Аренда техники",calc_row_deliv:"Доставка",
+  calc_row_night:"Ночная смена (×1.3)",calc_row_holiday:"Выходной (×1.2)",calc_row_urgent:"Срочный выезд",calc_row_discount:"Скидка 10%",
+  lbl_why:"Почему мы",hd_adv:"Что входит в нашу работу",
+  adv1_t:"Выезд за 1 час",adv1_d:"Подача техники по Алматы в течение 60 минут после звонка.",
+  adv2_t:"Японская техника",adv2_d:"Isuzu, Hino, Mitsubishi, Nissan. Без подтёков масла, в отличном состоянии.",
+  adv3_t:"Допущенные операторы",adv3_d:"Все с действующим допуском на автовышку и удостоверением люльщика.",
+  adv4_t:"Диэлектрическая стрела",adv4_d:"Безопасная работа рядом с ЛЭП и высоковольтными линиями.",
+  adv5_t:"Ночное освещение",adv5_d:"Работаем в тёмное время без дополнительных прожекторов.",
+  adv6_t:"Поворотная корзина",adv6_d:"2 поста управления — сверху и снизу. Плавный ход стрелы и люльки.",
+  adv7_t:"Лебёдка 500 кг",adv7_d:"Поднимаем грузы до полутонны, а не только людей.",
+  adv8_t:"Скидка до 10%",adv8_d:"Оформите заказ на сайте и получите скидку до 10% от стоимости.",
+  lbl_works:"Портфолио",hd_works:"Наши работы",sub_works:"Примеры объектов, на которых мы работали в Алматы и области.",
+  lbl_info:"Информация",hd_cond:"Условия аренды",
+  c1_t:"Время",c1_d:"Мин. заказ — 3 часа (28–35 м — от 4 часов). Работаем 24/7 без выходных.",
+  c2_t:"Документы",c2_d:"Для физлиц — удостоверение. Для юрлиц — реквизиты и договор.",
+  c3_t:"Оплата",c3_d:"Наличные, перевод на карту, Kaspi, безнал с НДС.",
+  c4_t:"Подача",c4_d:"По Алматы бесплатно, пригород и область — по тарифу.",
+  c5_t:"Скидка до 10%",c5_d:"Оформите заявку через сайт — получите скидку до 10% от итоговой суммы.",
+  c6_t:"Безопасность",c6_d:"Конусы, ленты, ремни и аутригеры включены в комплект.",
+  lbl_faq:"FAQ",hd_faq:"Частые вопросы",
+  lbl_cta:"Связаться",hd_cta:"Закажите автовышку со скидкой до 10%",cta_sub:"Перезвоним и подтвердим заявку в течение 5 минут",
+  ft_desc:"Аренда автовышек 16–35 метров в Алматы и области. Японская техника, работаем 24/7. Скидка до 10% при заказе.",
+  ft_nav:"Навигация",ft_cont:"Контакты",ft_dev:"Разработчик —",ft_addr:"г. Алматы, Казахстан",
+  bb_fleet:"Техника",bb_calc:"Расчёт",bb_call:"Звонок",
+  sp_h:"Высота",sp_r:"Вылет",sp_cap:"Грузопод.",sp_base:"База",sp_cat:"Класс",sp_diel:"Диэл. стрела",sp_light:"Освещение",sp_winch:"Лебёдка",
+  m_book:"Заказать",m_call:"Позвонить",m_wa:"WhatsApp",m_calc:"В калькулятор",
+  bk_t:"Заявка на аренду",bk_c:"Техника",bk_n:"Ваше имя *",bk_p:"Телефон *",bk_d:"Дата работ",bk_tm:"Время начала",bk_y:"Количество часов",bk_ad:"Адрес объекта",bk_m:"Комментарий",
+  bk_discount:"Скидка до 10% при заказе через сайт",bk_sub:"Отправить заявку в WhatsApp",
+  bk_ok1:"Заявка отправлена!",bk_ok2:"Мы свяжемся с вами в течение 5 минут для подтверждения.",
+  a_fill:"Пожалуйста, заполните имя и телефон",a_req:"Заявка на автовышку",a_tech:"Техника",a_name:"Имя",a_phone:"Телефон",a_date:"Дата",a_time:"Время",a_hrs:"Часов",a_addr:"Адрес",a_com:"Комментарий",a_calc_pref:"Расчёт с сайта"
 },
-kz:{nav_fleet:"Техника",nav_calc:"Калькулятор",nav_adv:"Артықшылықтар",nav_wrk:"Жұмыстар",nav_faq:"FAQ",nav_cont:"Байланыс",order:"Тапсыру",mob_info1:"Алматыда автомұнара жалдау. 24/7.",mob_info2:"Алматы қ., Қазақстан",mob_dev:"Сайттың әзірлеушісі —",
-hero_badge:"1 сағат ішінде Алматы бойынша келу",hero_h1_1:"Автомұнара жалдау",hero_h1_2:"14-тен 28 метрге дейін",hero_sub:"Жапон техникасы, рұқсаты бар операторлар, толық қауіпсіздік жиынтығы. Тәулік бойы жұмыс істейміз — жеке тапсырмалардан өнеркәсіп объектілеріне дейін.",hero_s1:"Техника саны",hero_s2:"Макс. биіктік",hero_s3:"Жұмыс режимі",hero_cta1:"Қазір тапсырыс беру",hero_cta2:"Бағаны есептеу",
-lbl_fleet:"Біздің парк",hd_fleet:"Кез келген тапсырмаға 6 автомұнара",sub_fleet:"Аулалық жұмыстарға арналған ықшам 14 м-ден 20 м ұшырылымы бар 28 м флагманға дейін.",f_all:"Барлығы",f_s:"15 м-ге дейін",f_m:"20 м-ге дейін",f_l:"25 м-ге дейін",f_xl:"25 м және одан жоғары",s_pa:"Баға бойынша ↑",s_pd:"Баға бойынша ↓",s_ha:"Биіктігі бойынша ↑",s_hd:"Биіктігі бойынша ↓",cnt:"дана",more:"Толығырақ",per_h:"/ сағат",min_h:"мин. 2 сағат",
-lbl_calc:"Онлайн-есептеу",hd_calc:"Құн калькуляторы",sub_calc:"Техниканы және шарттарды таңдаңыз — секунд ішінде дәл бағаны көресіз.",calc_lb1:"Техниканы таңдау",calc_lb2:"Сағат саны",calc_hrs:"сағ",calc_lb3:"Жұмыс аймағы",calc_z1:"Қала бойынша",calc_z1s:"Жеткізу тегін",calc_z2:"Қала сыртында",calc_z3:"Облыста",calc_lb4:"Қосымша",calc_ad1:"Оператор қосылған",calc_ad1s:"Әрқашан тегін",calc_ad2:"Түнгі ауысым",calc_ad2s:"22:00–06:00, коэф. ×1.3",calc_ad3:"Демалыс/мереке",calc_ad3s:"Коэффициент ×1.2",calc_ad4:"Жедел шығу",calc_ad4s:"1 сағатқа дейін, +3 000 ₸",calc_res:"Төлемге барлығы",calc_est:"Шамамен құны",calc_btn:"Өтінім беру",calc_note:"Нақты баға — өтінімді растағаннан кейін",calc_row_rate:"Тариф",calc_row_hrs:"Сағат",calc_row_base:"Техника жалдауы",calc_row_deliv:"Жеткізу",calc_row_night:"Түнгі ауысым (×1.3)",calc_row_holiday:"Демалыс (×1.2)",calc_row_urgent:"Жедел шығу",
-lbl_why:"Неге біз",hd_adv:"Біздің жұмысқа не кіреді",adv1_t:"1 сағатта келу",adv1_d:"Қоңыраудан кейін 60 минут ішінде Алматы бойынша техника жеткізу.",adv2_t:"Жапон техникасы",adv2_d:"Isuzu, Hino, Mitsubishi, Nissan. Май ағындарысыз, керемет күйде.",adv3_t:"Рұқсаты бар операторлар",adv3_d:"Барлығында қолданыстағы автомұнара рұқсаты мен люлькашы куәлігі бар.",adv4_t:"Диэлектрлік жебе",adv4_d:"Электр желілері маңында қауіпсіз жұмыс.",adv5_t:"Түнгі жарық",adv5_d:"Қараңғы уақытта қосымша прожекторларсыз жұмыс істейміз.",adv6_t:"Бұрылатын себет",adv6_d:"2 басқару пункті — жоғарыдан және төменнен. Жебе мен люльканың тегіс қозғалысы.",adv7_t:"500 кг шығыр",adv7_d:"Тек адамдарды емес, жартытоннаға дейінгі жүктерді де көтереміз.",adv8_t:"Қауіпсіздік",adv8_d:"Конустар, сигналды ленталар, сақтандыру белдіктері және аутригерлер — барлығы өзімізде.",
-lbl_works:"Портфолио",hd_works:"Біздің жұмыстар",sub_works:"Алматы мен облыста жұмыс істеген объектілердің мысалдары.",
-lbl_info:"Ақпарат",hd_cond:"Жалдау шарттары",c1_t:"Уақыт",c1_d:"Мин. тапсырыс — 2 сағат. 24/7 демалыссыз жұмыс істейміз.",c2_t:"Құжаттар",c2_d:"Жеке тұлғаларға — куәлік. Заңды тұлғаларға — деректемелер мен келісімшарт.",c3_t:"Төлем",c3_d:"Қолма-қол, картаға аудару, Kaspi, ҚҚС-пен қолма-қол емес.",c4_t:"Жеткізу",c4_d:"Алматы бойынша тегін, қала сырты мен облыс — тариф бойынша.",c5_t:"Оператор",c5_d:"Әрқашан құнға кіреді. Операторсыз жұмыс рұқсат етілмейді.",c6_t:"Қауіпсіздік",c6_d:"Конустар, ленталар, белдіктер мен аутригерлер жиынтыққа кіреді.",
-lbl_faq:"FAQ",hd_faq:"Жиі қойылатын сұрақтар",
-lbl_cta:"Байланысу",hd_cta:"Қазір автомұнараға тапсырыс беріңіз",cta_sub:"5 минут ішінде қоңырау шалып, өтінімді растаймыз",
-ft_desc:"Алматыда және облыста 14–28 метр автомұнараларды жалдау. Жапон техникасы, тәжірибелі операторлар, 24/7 жұмыс.",ft_nav:"Навигация",ft_cont:"Байланыс",ft_dev:"Әзірлеуші —",ft_addr:"Алматы қ., Қазақстан",
-bb_fleet:"Техника",bb_calc:"Есеп",bb_call:"Қоңырау",
-sp_h:"Биіктік",sp_r:"Ұшырылым",sp_cap:"Көтергіштік",sp_base:"База",sp_cat:"Сыныбы",sp_extra:"Опциялар",sp_price:"Бағасы",sp_winch:"Шығыр",sp_post:"Пункттер",sp_light:"Жарық",sp_diel:"Диэл. жебе",
-m_book:"Тапсыру",m_call:"Қоңырау",m_wa:"WhatsApp",m_calc:"Калькуляторға",
-bk_t:"Жалдауға өтінім",bk_c:"Техника",bk_n:"Сіздің атыңыз *",bk_p:"Телефон *",bk_d:"Жұмыс күні",bk_tm:"Басталу уақыты",bk_y:"Сағат саны",bk_ad:"Объект мекенжайы",bk_m:"Түсініктеме",bk_sub:"Өтінімді WhatsApp-қа жіберу",bk_ok1:"Өтінім жіберілді!",bk_ok2:"Растау үшін 5 минут ішінде хабарласамыз.",
-a_fill:"Атыңыз бен телефоныңызды толтырыңыз",a_req:"Автомұнараға өтінім",a_tech:"Техника",a_name:"Аты",a_phone:"Телефон",a_date:"Күні",a_time:"Уақыты",a_hrs:"Сағат",a_addr:"Мекенжай",a_com:"Түсініктеме",a_calc_pref:"Сайттан есеп"
+kz:{
+  nav_fleet:"Техника",nav_calc:"Калькулятор",nav_adv:"Артықшылықтар",nav_wrk:"Жұмыстар",nav_faq:"FAQ",nav_cont:"Байланыс",order:"Тапсыру",
+  mob_info1:"Алматыда автомұнара жалдау. 24/7.",mob_info2:"Алматы қ., Қазақстан",mob_dev:"Сайттың әзірлеушісі —",
+  hero_badge:"Тапсырыс берген кезде 10%-ға дейін жеңілдік",hero_h1_1:"Автомұнара жалдау",hero_h1_2:"16-дан 35 метрге дейін",
+  hero_sub:"Жапон техникасы, рұқсаты бар операторлар, толық қауіпсіздік жиынтығы. Тәулік бойы жұмыс істейміз.",
+  hero_s1:"Техника сыныбы",hero_s2:"Макс. биіктік",hero_s3:"Жұмыс режимі",
+  hero_cta1:"Жеңілдікпен тапсырыс беру",hero_cta2:"Бағаны есептеу",
+  lbl_fleet:"Біздің парк",hd_fleet:"3 сынып автомұнара",sub_fleet:"Қалалық жұмыстарға арналған 16 м-ден биіктік өнеркәсіп объектілеріне 35 м-ге дейін. Ең аз тапсырыс — 3 сағат.",
+  cnt:"дана",more:"Толығырақ",per_h:"/ сағат",min_h3:"мин. 3 сағат",min_h4:"мин. 4 сағат",
+  lbl_calc:"Онлайн-есептеу",hd_calc:"Құн калькуляторы",sub_calc:"Техниканы және шарттарды таңдаңыз — секунд ішінде дәл бағаны көресіз. Тапсырыс берген кезде 10%-ға дейін жеңілдік.",
+  calc_lb1:"Техниканы таңдау",calc_lb2:"Сағат саны",calc_hrs:"сағ",
+  calc_lb3:"Жұмыс аймағы",calc_z1:"Қала бойынша",calc_z1s:"Жеткізу тегін",calc_z2:"Қала сыртында",calc_z3:"Облыста",
+  calc_lb4:"Қосымша",calc_ad1:"Оператор қосылған",calc_ad1s:"Әрқашан тегін",
+  calc_ad2:"Түнгі ауысым",calc_ad2s:"22:00–06:00, коэф. ×1.3",calc_ad3:"Демалыс/мереке",calc_ad3s:"Коэффициент ×1.2",
+  calc_ad4:"Жедел шығу",calc_ad4s:"1 сағатқа дейін, +3 000 ₸",calc_ad5:"10% жеңілдік қолдану",calc_ad5s:"Ұзақ мерзімді тапсырыс кезінде",
+  calc_res:"Төлемге барлығы",calc_est:"Шамамен құны",calc_btn:"Жеңілдікпен өтінім беру",calc_note:"Нақты баға — өтінімді растағаннан кейін",
+  calc_row_rate:"Тариф",calc_row_hrs:"Сағат",calc_row_base:"Техника жалдауы",calc_row_deliv:"Жеткізу",
+  calc_row_night:"Түнгі ауысым (×1.3)",calc_row_holiday:"Демалыс (×1.2)",calc_row_urgent:"Жедел шығу",calc_row_discount:"Жеңілдік 10%",
+  lbl_why:"Неге біз",hd_adv:"Біздің жұмысқа не кіреді",
+  adv1_t:"1 сағатта келу",adv1_d:"Қоңыраудан кейін 60 минут ішінде Алматы бойынша техника жеткізу.",
+  adv2_t:"Жапон техникасы",adv2_d:"Isuzu, Hino, Mitsubishi, Nissan. Май ағындарысыз, керемет күйде.",
+  adv3_t:"Рұқсаты бар операторлар",adv3_d:"Барлығында қолданыстағы автомұнара рұқсаты бар.",
+  adv4_t:"Диэлектрлік жебе",adv4_d:"Электр желілері маңында қауіпсіз жұмыс.",
+  adv5_t:"Түнгі жарық",adv5_d:"Қараңғы уақытта қосымша прожекторларсыз жұмыс істейміз.",
+  adv6_t:"Бұрылатын себет",adv6_d:"2 басқару пункті — жоғарыдан және төменнен.",
+  adv7_t:"500 кг шығыр",adv7_d:"Тек адамдарды емес, жартытоннаға дейінгі жүктерді де көтереміз.",
+  adv8_t:"10%-ға дейін жеңілдік",adv8_d:"Сайт арқылы тапсырыс беріп, 10%-ға дейін жеңілдік алыңыз.",
+  lbl_works:"Портфолио",hd_works:"Біздің жұмыстар",sub_works:"Алматы мен облыста жұмыс істеген объектілердің мысалдары.",
+  lbl_info:"Ақпарат",hd_cond:"Жалдау шарттары",
+  c1_t:"Уақыт",c1_d:"Мин. тапсырыс — 3 сағат (28–35 м — 4 сағаттан). 24/7 жұмыс.",
+  c2_t:"Құжаттар",c2_d:"Жеке тұлғаларға — куәлік. Заңды тұлғаларға — деректемелер мен келісімшарт.",
+  c3_t:"Төлем",c3_d:"Қолма-қол, картаға аудару, Kaspi, ҚҚС-пен қолма-қол емес.",
+  c4_t:"Жеткізу",c4_d:"Алматы бойынша тегін, қала сырты мен облыс — тариф бойынша.",
+  c5_t:"10%-ға дейін жеңілдік",c5_d:"Сайт арқылы өтінім беріңіз — жалпы сомадан 10%-ға дейін жеңілдік алыңыз.",
+  c6_t:"Қауіпсіздік",c6_d:"Конустар, ленталар, белдіктер мен аутригерлер жиынтыққа кіреді.",
+  lbl_faq:"FAQ",hd_faq:"Жиі қойылатын сұрақтар",
+  lbl_cta:"Байланысу",hd_cta:"10%-ға дейін жеңілдікпен автомұнараға тапсырыс беріңіз",cta_sub:"5 минут ішінде қоңырау шалып, өтінімді растаймыз",
+  ft_desc:"Алматыда және облыста 16–35 метр автомұнараларды жалдау. Жапон техникасы, 24/7 жұмыс. Тапсырыс кезінде 10%-ға дейін жеңілдік.",
+  ft_nav:"Навигация",ft_cont:"Байланыс",ft_dev:"Әзірлеуші —",ft_addr:"Алматы қ., Қазақстан",
+  bb_fleet:"Техника",bb_calc:"Есеп",bb_call:"Қоңырау",
+  sp_h:"Биіктік",sp_r:"Ұшырылым",sp_cap:"Көтергіштік",sp_base:"База",sp_cat:"Сыныбы",sp_diel:"Диэл. жебе",sp_light:"Жарық",sp_winch:"Шығыр",
+  m_book:"Тапсыру",m_call:"Қоңырау",m_wa:"WhatsApp",m_calc:"Калькуляторға",
+  bk_t:"Жалдауға өтінім",bk_c:"Техника",bk_n:"Сіздің атыңыз *",bk_p:"Телефон *",bk_d:"Жұмыс күні",bk_tm:"Басталу уақыты",bk_y:"Сағат саны",bk_ad:"Объект мекенжайы",bk_m:"Түсініктеме",
+  bk_discount:"Сайт арқылы тапсырыс берген кезде 10%-ға дейін жеңілдік",bk_sub:"Өтінімді WhatsApp-қа жіберу",
+  bk_ok1:"Өтінім жіберілді!",bk_ok2:"Растау үшін 5 минут ішінде хабарласамыз.",
+  a_fill:"Атыңыз бен телефоныңызды толтырыңыз",a_req:"Автомұнараға өтінім",a_tech:"Техника",a_name:"Аты",a_phone:"Телефон",a_date:"Күні",a_time:"Уақыты",a_hrs:"Сағат",a_addr:"Мекенжай",a_com:"Түсініктеме",a_calc_pref:"Сайттан есеп"
 }
 };
 function t(k){return(T[lang]&&T[lang][k])||T.ru[k]||k}
 
-/* =============== DATA =============== */
+/* =============== DATA — 3 classes =============== */
 const C=[
-{id:1,name:"Автовышка 14 м",nameKz:"Автомұнара 14 м",cat:"Компакт",catKz:"Ықшам",catCls:"bk-compact",h:14,r:7,cap:200,base:"Nissan Atlas / Isuzu Elf",fuel:"Дизель",winch:"200 кг",posts:"1",light:"Нет",diel:"Нет",price:8000,
-desc:"Самая манёвренная машина парка. Проезжает в узкие дворы, через бордюры, работает с тротуара без перекрытия улицы.",
-descKz:"Парктің ең ептілі. Тар аулаларға кіреді, бордюрлерден өтеді, көшені жаппай тротуардан жұмыс істейді.",
-useFor:"Монтаж рекламы на фасадах 1–4 этажей, обрезка деревьев во дворах, замена окон, мойка витрин, установка кондиционеров.",
-useForKz:"1–4 қабаттардағы фасадтарға жарнама орнату, аулалардағы ағаштарды кесу, терезе ауыстыру, витриналарды жуу, кондиционер орнату.",
-filter:"s"},
-{id:2,name:"Автовышка 17 м",nameKz:"Автомұнара 17 м",cat:"Стандарт",catKz:"Стандарт",catCls:"bk-standard",h:17,r:10,cap:200,base:"Mitsubishi Canter",fuel:"Дизель",winch:"500 кг",posts:"2",light:"Есть",diel:"Нет",price:10000,
-desc:"Золотая середина — подходит для 90% типовых задач в городе. Плавный ход стрелы и люльки, опытный оператор.",
-descKz:"Алтын орта — қаладағы типтік тапсырмалардың 90%-ына жарайды. Жебе мен люльканың тегіс қозғалысы.",
-useFor:"Ремонт кровли и фасадов 4–5 этажей, монтаж вывесок, праздничная иллюминация, клининг остеклений.",
-useForKz:"4–5 қабаттардың шатырын және фасадын жөндеу, маңдайша орнату, мерекелік жарықтандыру, әйнектерді тазалау.",
-filter:"m"},
-{id:3,name:"Автовышка 20 м",nameKz:"Автомұнара 20 м",cat:"Энергетика",catKz:"Энергетика",catCls:"bk-energy",h:20,r:14,cap:200,base:"Hino Ranger",fuel:"Дизель",winch:"500 кг",posts:"2",light:"Есть",diel:"Да (до 1 кВ)",price:13000,
-desc:"Единственная в парке с диэлектрической стрелой — безопасна для работ рядом с ЛЭП и высоковольтными линиями.",
-descKz:"Парктегі жалғыз диэлектрлік жебесі бар — ЭЭЖ маңында қауіпсіз.",
-useFor:"Обслуживание линий электропередач, замена уличных фонарей, работы рядом с трансформаторами, контактной сетью.",
-useForKz:"Электр желілерін қызмет көрсету, көше шамдарын ауыстыру, трансформаторлар маңында жұмыс.",
-filter:"m"},
-{id:4,name:"Автовышка 22 м",nameKz:"Автомұнара 22 м",cat:"Бортовая",catKz:"Бортты",catCls:"bk-board",h:22,r:16,cap:200,base:"Isuzu Forward",fuel:"Дизель",winch:"500 кг",posts:"2",light:"Есть",diel:"Нет",price:15000,
-desc:"Комбинированная машина — привозит материалы на объект и сразу поднимает их на высоту. Экономия на отдельном манипуляторе.",
-descKz:"Біріктірілген көлік — объектіге материалдарды әкеліп, бірден биіктікке көтереді.",
-useFor:"Кровельные работы с доставкой материалов, замена остеклений, монтаж оборудования на крышах, HVAC-работы.",
-useForKz:"Материалдарды жеткізумен шатыр жұмыстары, әйнек ауыстыру, шатырға жабдық орнату, HVAC.",
-filter:"l"},
-{id:5,name:"Автовышка 26 м",nameKz:"Автомұнара 26 м",cat:"Высотная",catKz:"Биіктік",catCls:"bk-high",h:26,r:18,cap:200,base:"Mitsubishi Fuso Fighter",fuel:"Дизель",winch:"500 кг",posts:"2",light:"Есть",diel:"Нет",price:18000,
-desc:"Для работ на зданиях повышенной этажности и промышленных объектах. Плавное управление, аутригеры повышенной устойчивости.",
-descKz:"Жоғары қабатты ғимараттар мен өнеркәсіп объектілерінде жұмыс үшін. Тегіс басқару.",
-useFor:"Монтаж/демонтаж вывесок на ТРЦ и БЦ, ремонт высотных фасадов, промальп-работы как страховка, съёмки с высоты.",
-useForKz:"СОО мен БО-лардағы маңдайшаларды орнату/бөлшектеу, биік фасадтарды жөндеу, биіктен түсіру.",
-filter:"xl"},
-{id:6,name:"Автовышка 28 м",nameKz:"Автомұнара 28 м",cat:"Макси",catKz:"Макси",catCls:"bk-max",h:28,r:20,cap:200,base:"Hino Ranger / Mitsubishi Fuso",fuel:"Дизель",winch:"500 кг",posts:"2",light:"Есть",diel:"Опция",price:22000,
-desc:"Флагман парка. Максимальный вылет 20 м позволяет работать там, где машину невозможно подогнать вплотную к объекту.",
-descKz:"Парк флагманы. Ең үлкен 20 м ұшырылымы көлік объектіге жақын тоқтай алмайтын жерде жұмыс істеуге мүмкіндік береді.",
-useFor:"Работы над крышами и козырьками, монтаж крановых конструкций, обслуживание мостов/эстакад, киносъёмки, МЧС-задачи.",
-useForKz:"Шатырлар мен козырьктердің үстінде жұмыс, крандық құрылымдарды орнату, көпірлер мен эстакадаларды күту, кинотүсіру.",
-filter:"xl"}
+  {
+    id:1,
+    name:"Автовышка 16–22 м",nameKz:"Автомұнара 16–22 м",
+    cat:"Стандарт",catKz:"Стандарт",catCls:"bk-standard",
+    h:22,hRange:"16–22",r:12,cap:200,
+    base:"Mitsubishi Canter / Isuzu Elf",
+    diel:"Нет",light:"Есть",winch:"500 кг",posts:"2",
+    price:12000,minHours:3,
+    img:"images/truck-16-22.jpg",
+    desc:"Универсальная машина для большинства городских задач. Проходит в узкие дворы, работает рядом с фасадами зданий 4–6 этажей.",
+    descKz:"Қалалық тапсырмалардың көпшілігіне арналған әмбебап көлік. Тар аулаларға кіреді, 4–6 қабатты ғимараттар маңында жұмыс істейді.",
+    useFor:"Монтаж рекламы на фасадах 1–5 этажей, обрезка деревьев, замена окон, мойка витрин, установка кондиционеров, ремонт кровли.",
+    useForKz:"1–5 қабаттардағы фасадтарға жарнама орнату, ағаштарды кесу, терезе ауыстыру, витриналарды жуу, кондиционер орнату.",
+  },
+  {
+    id:2,
+    name:"Автовышка 23–27 м",nameKz:"Автомұнара 23–27 м",
+    cat:"Высотная",catKz:"Биіктік",catCls:"bk-high",
+    h:27,hRange:"23–27",r:16,cap:200,
+    base:"Hino Ranger / Mitsubishi Fuso",
+    diel:"Нет",light:"Есть",winch:"500 кг",posts:"2",
+    price:14000,minHours:3,
+    img:"images/truck-23-27.jpg",
+    desc:"Для работ на зданиях повышенной этажности. Высокий вылет стрелы позволяет работать там, где нельзя подъехать вплотную.",
+    descKz:"Жоғары қабатты ғимараттарда жұмыс үшін. Жебенің үлкен ұшырылымы жақын тоқтай алмайтын жерде жұмыс істеуге мүмкіндік береді.",
+    useFor:"Монтаж/демонтаж вывесок на ТРЦ и БЦ, ремонт высотных фасадов, промальп-работы, обслуживание уличных фонарей, кровельные работы.",
+    useForKz:"СОО мен БО-лардағы маңдайшаларды орнату/бөлшектеу, биік фасадтарды жөндеу, көше шамдарын қызмет көрсету.",
+  },
+  {
+    id:3,
+    name:"Автовышка 28–35 м",nameKz:"Автомұнара 28–35 м",
+    cat:"Макси",catKz:"Макси",catCls:"bk-max",
+    h:35,hRange:"28–35",r:20,cap:200,
+    base:"Hino / Mitsubishi Fuso Super Great",
+    diel:"Опция",light:"Есть",winch:"500 кг",posts:"2",
+    price:16000,minHours:4,
+    img:"images/truck-28-35.jpg",
+    desc:"Флагман парка. Максимальный вылет 20 м позволяет работать над крышами и козырьками, где машину невозможно подогнать вплотную.",
+    descKz:"Парк флагманы. Ең үлкен 20 м ұшырылымы шатырлар мен козырьктердің үстінде жұмыс істеуге мүмкіндік береді.",
+    useFor:"Промышленные объекты, работы над крышами и козырьками, монтаж крановых конструкций, обслуживание мостов/эстакад, МЧС-задачи.",
+    useForKz:"Өнеркәсіп объектілері, шатырлар мен козырьктердің үстінде жұмыс, крандық құрылымдарды орнату, көпірлерді күту.",
+  }
 ];
 
 const FAQ=[
-{q:"Какое минимальное время аренды?",qKz:"Ең аз жалдау уақыты қандай?",a:"Минимальный заказ — 2 часа. Время отсчитывается с момента подачи техники на объект.",aKz:"Ең аз тапсырыс — 2 сағат. Уақыт объектіге техника жеткізілген сәттен есептеледі."},
-{q:"Оператор входит в стоимость?",qKz:"Оператор құнға кіре ме?",a:"Да, всегда. Работать без нашего оператора нельзя по технике безопасности — это требование производителя и норм охраны труда.",aKz:"Иә, әрқашан. Қауіпсіздік техникасы бойынша біздің операторсыз жұмыс істеу мүмкін емес — бұл өндіруші талабы мен еңбек қорғау нормалары."},
-{q:"Работаете ли в выходные и ночью?",qKz:"Демалыс күндері мен түнде жұмыс істейсіздер ме?",a:"Да. Коэффициент ×1.2 за выходной или праздничный день, ×1.3 за ночную смену (с 22:00 до 06:00).",aKz:"Иә. Демалыс немесе мереке күні үшін ×1.2 коэффициент, түнгі ауысым үшін ×1.3 (22:00-ден 06:00-ге дейін)."},
-{q:"Можно ли выехать за город?",qKz:"Қала сыртына шығуға бола ма?",a:"Да, в пределах 100 км от Алматы. Подача и километраж рассчитываются отдельно. Для более дальних поездок — по индивидуальному согласованию.",aKz:"Иә, Алматыдан 100 км шегінде. Жеткізу мен километраж бөлек есептеледі. Алысырақ сапарлар — жеке келісім бойынша."},
-{q:"Как быстро приедет техника?",qKz:"Техника қаншалықты тез келеді?",a:"По Алматы — в течение 1 часа после подтверждения заявки. При срочном выезде (опция +3 000 ₸) стараемся быть на месте максимально быстро.",aKz:"Алматы бойынша — өтінім расталғаннан кейін 1 сағат ішінде. Жедел шығу кезінде (опция +3 000 ₸) мүмкіндігінше тез жетуге тырысамыз."},
-{q:"Как происходит оплата?",qKz:"Төлем қалай жүзеге асады?",a:"Принимаем наличные, перевод на карту, Kaspi QR/Gold, безналичный расчёт с НДС для юридических лиц. Предоставляем полный пакет документов.",aKz:"Қолма-қол, картаға аудару, Kaspi QR/Gold, заңды тұлғалар үшін ҚҚС-пен қолма-қол емес есеп алынады. Толық құжаттар пакеті беріледі."},
-{q:"Что если не уложились в оплаченные часы?",qKz:"Төленген сағаттарға үлгермесек не болады?",a:"Каждый дополнительный час оплачивается по тому же часовому тарифу, фиксируется оператором в путевом листе. Минимальная доп. единица — 1 час.",aKz:"Әрбір қосымша сағат сол сағаттық тариф бойынша төленеді, оператор жүру параққа жазып қояды. Мин. қосымша бірлік — 1 сағат."},
-{q:"Есть ли страховка?",qKz:"Сақтандыру бар ма?",a:"Гражданская ответственность застрахована. Вся техника проходит регулярное ТО. На каждую поездку оформляется путевой лист и акт выполненных работ.",aKz:"Азаматтық жауапкершілік сақтандырылған. Барлық техника тұрақты ТҚ-дан өтеді. Әр сапарға жүру парағы мен орындалған жұмыс актісі ресімделеді."}
+  {q:"Какое минимальное время аренды?",qKz:"Ең аз жалдау уақыты қандай?",
+   a:"Для автовышек 16–27 м — минимум 3 часа. Для 28–35 м — минимум 4 часа. Время отсчитывается с момента подачи техники на объект.",
+   aKz:"16–27 м автомұнаралар үшін — кемінде 3 сағат. 28–35 м үшін — кемінде 4 сағат. Уақыт объектіге техника жеткізілген сәттен есептеледі."},
+  {q:"Как получить скидку до 10%?",qKz:"10%-ға дейін жеңілдікті қалай алуға болады?",
+   a:"Оформите заявку через сайт — кнопка «Заказать» или калькулятор. Скидка применяется автоматически при подтверждении заявки менеджером.",
+   aKz:"Сайт арқылы өтінім беріңіз — «Тапсыру» батырмасы немесе калькулятор. Жеңілдік менеджер өтінімді растаған кезде автоматты түрде қолданылады."},
+  {q:"Оператор входит в стоимость?",qKz:"Оператор құнға кіре ме?",
+   a:"Да, всегда. Работать без нашего оператора нельзя по технике безопасности.",
+   aKz:"Иә, әрқашан. Қауіпсіздік техникасы бойынша біздің операторсыз жұмыс істеу мүмкін емес."},
+  {q:"Работаете ли в выходные и ночью?",qKz:"Демалыс күндері мен түнде жұмыс істейсіздер ме?",
+   a:"Да. Коэффициент ×1.2 за выходной или праздничный день, ×1.3 за ночную смену (с 22:00 до 06:00).",
+   aKz:"Иә. Демалыс немесе мереке күні үшін ×1.2 коэффициент, түнгі ауысым үшін ×1.3 (22:00-ден 06:00-ге дейін)."},
+  {q:"Можно ли выехать за город?",qKz:"Қала сыртына шығуға бола ма?",
+   a:"Да, в пределах 100 км от Алматы. Доставка и километраж рассчитываются отдельно.",
+   aKz:"Иә, Алматыдан 100 км шегінде. Жеткізу мен километраж бөлек есептеледі."},
+  {q:"Как происходит оплата?",qKz:"Төлем қалай жүзеге асады?",
+   a:"Принимаем наличные, перевод на карту, Kaspi QR/Gold, безналичный расчёт с НДС для юридических лиц.",
+   aKz:"Қолма-қол, картаға аудару, Kaspi QR/Gold, заңды тұлғалар үшін ҚҚС-пен қолма-қол емес есеп алынады."},
+  {q:"Что если не уложились в оплаченные часы?",qKz:"Төленген сағаттарға үлгермесек не болады?",
+   a:"Каждый дополнительный час оплачивается по тому же часовому тарифу. Минимальная доп. единица — 1 час.",
+   aKz:"Әрбір қосымша сағат сол сағаттық тариф бойынша төленеді. Мин. қосымша бірлік — 1 сағат."},
+  {q:"Есть ли страховка?",qKz:"Сақтандыру бар ма?",
+   a:"Гражданская ответственность застрахована. Вся техника проходит регулярное ТО. На каждую поездку оформляется путевой лист.",
+   aKz:"Азаматтық жауапкершілік сақтандырылған. Барлық техника тұрақты ТҚ-дан өтеді."}
 ];
 
 const WORKS=[
-{t:"Монтаж рекламы, ул. Толе би",tKz:"Жарнама орнату, Төле би к."},
-{t:"Обрезка деревьев, Бостандыкский р-н",tKz:"Ағаштарды кесу, Бостандық ауданы"},
-{t:"Замена фонарей, ТРЦ «Достык Плаза»",tKz:"Шамдарды ауыстыру, «Достық Плаза» СОО"},
-{t:"Ремонт фасада, пр. Абая",tKz:"Фасадты жөндеу, Абай д-лы"},
-{t:"Новогодняя иллюминация",tKz:"Жаңа жылдық безендіру"},
-{t:"Монтаж кондиционеров, БЦ",tKz:"Кондиционер орнату, БО"},
-{t:"Работы на ЛЭП, пригород",tKz:"ЭЭЖ-да жұмыс, қала маңы"},
-{t:"Кровельные работы, 9 этажей",tKz:"Шатыр жұмыстары, 9 қабат"},
-{t:"Мойка остеклений, БЦ",tKz:"Әйнектерді жуу, БО"},
-{t:"Демонтаж вывески, ТРЦ",tKz:"Маңдайшаны бөлшектеу, СОО"}
+  {t:"Монтаж рекламы, ул. Толе би",tKz:"Жарнама орнату, Төле би к.",img:"images/work-1.jpg"},
+  {t:"Обрезка деревьев, Бостандыкский р-н",tKz:"Ағаштарды кесу, Бостандық ауданы",img:"images/work-2.jpg"},
+  {t:"Замена фонарей, ТРЦ «Достык Плаза»",tKz:"Шамдарды ауыстыру, «Достық Плаза» СОО",img:"images/work-3.jpg"},
+  {t:"Ремонт фасада, пр. Абая",tKz:"Фасадты жөндеу, Абай д-лы",img:"images/work-4.jpg"},
+  {t:"Новогодняя иллюминация",tKz:"Жаңа жылдық безендіру",img:"images/work-5.jpg"},
+  {t:"Монтаж кондиционеров, БЦ",tKz:"Кондиционер орнату, БО",img:"images/work-6.jpg"},
+  {t:"Работы на ЛЭП, пригород",tKz:"ЭЭЖ-да жұмыс, қала маңы",img:"images/work-7.jpg"},
+  {t:"Кровельные работы, 9 этажей",tKz:"Шатыр жұмыстары, 9 қабат",img:"images/work-8.jpg"},
+  {t:"Мойка остеклений, БЦ",tKz:"Әйнектерді жуу, БО",img:"images/work-9.jpg"},
+  {t:"Демонтаж вывески, ТРЦ",tKz:"Маңдайшаны бөлшектеу, СОО",img:"images/work-10.jpg"}
 ];
 
-/* =============== TRUCK SVG GENERATOR (для разных ракурсов/ID) =============== */
-function truckSVG(c,variant){
-  const v=variant||'card';
-  const boom=c.h;
-  const hh=boom*3+30;
-  // Colors
-  const bgStop1=v==='hero'?'#1a1a1a':'#1a1a1a';
-  const bgStop2=v==='hero'?'#0a0a0a':'#222';
-  const accent='#c8a24e';
-  // Ratio by boom
-  const boomAngle=55;
-  const boomLen=boom*3;
-  const bx1=260,by1=240;
-  const bx2=bx1-Math.cos(boomAngle*Math.PI/180)*boomLen;
-  const by2=by1-Math.sin(boomAngle*Math.PI/180)*boomLen;
-  return `<svg viewBox="0 0 500 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-    <defs>
-      <linearGradient id="bg${c.id}${v}" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="${bgStop1}"/>
-        <stop offset="1" stop-color="${bgStop2}"/>
-      </linearGradient>
-      <linearGradient id="truck${c.id}${v}" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="#3a3a3a"/>
-        <stop offset="1" stop-color="#1a1a1a"/>
-      </linearGradient>
-      <pattern id="grid${c.id}${v}" width="20" height="20" patternUnits="userSpaceOnUse">
-        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#fff" stroke-width=".3" opacity=".04"/>
-      </pattern>
-    </defs>
-    <rect width="500" height="320" fill="url(#bg${c.id}${v})"/>
-    <rect width="500" height="320" fill="url(#grid${c.id}${v})"/>
-    <!-- Ground line -->
-    <line x1="0" y1="270" x2="500" y2="270" stroke="#fff" stroke-width="1" opacity=".15"/>
-    <line x1="0" y1="280" x2="500" y2="280" stroke="${accent}" stroke-width=".7" opacity=".3" stroke-dasharray="4,6"/>
-    <!-- Height scale -->
-    <g opacity=".25" stroke="#fff" stroke-width=".6">
-      ${[50,100,150,200].map(y=>`<line x1="10" y1="${270-y}" x2="20" y2="${270-y}"/>`).join('')}
-    </g>
-    <g fill="#fff" opacity=".35" font-family="monospace" font-size="8">
-      <text x="25" y="224">5m</text>
-      <text x="25" y="174">10m</text>
-      <text x="25" y="124">15m</text>
-      <text x="25" y="74">20m</text>
-    </g>
-    <!-- Truck body -->
-    <g>
-      <!-- Wheels -->
-      <circle cx="150" cy="265" r="16" fill="#1a1a1a" stroke="#555" stroke-width="1.5"/>
-      <circle cx="150" cy="265" r="7" fill="#333"/>
-      <circle cx="220" cy="265" r="16" fill="#1a1a1a" stroke="#555" stroke-width="1.5"/>
-      <circle cx="220" cy="265" r="7" fill="#333"/>
-      <circle cx="260" cy="265" r="16" fill="#1a1a1a" stroke="#555" stroke-width="1.5"/>
-      <circle cx="260" cy="265" r="7" fill="#333"/>
-      <!-- Chassis -->
-      <rect x="120" y="240" width="180" height="18" fill="url(#truck${c.id}${v})" stroke="${accent}" stroke-width=".8"/>
-      <!-- Cabin -->
-      <path d="M120 240 L120 200 L160 185 L175 185 L175 240 Z" fill="url(#truck${c.id}${v})" stroke="${accent}" stroke-width=".8"/>
-      <rect x="128" y="196" width="38" height="22" fill="#223" stroke="${accent}" stroke-width=".4" rx="1"/>
-      <!-- Cargo bed / outriggers -->
-      <rect x="175" y="220" width="130" height="22" fill="#252525" stroke="${accent}" stroke-width=".6"/>
-      <line x1="185" y1="260" x2="185" y2="275" stroke="${accent}" stroke-width="2"/>
-      <line x1="295" y1="260" x2="295" y2="275" stroke="${accent}" stroke-width="2"/>
-      <rect x="180" y="273" width="12" height="4" fill="${accent}"/>
-      <rect x="290" y="273" width="12" height="4" fill="${accent}"/>
-      <!-- Boom base (turret) -->
-      <rect x="240" y="215" width="30" height="28" fill="${accent}" opacity=".9" rx="2"/>
-      <circle cx="255" cy="220" r="5" fill="#1a1a1a"/>
-    </g>
-    <!-- Extending boom -->
-    <g>
-      <line x1="${bx1}" y1="${by1-5}" x2="${bx2}" y2="${by2}" stroke="${accent}" stroke-width="8" stroke-linecap="round"/>
-      <line x1="${bx1}" y1="${by1-5}" x2="${bx2}" y2="${by2}" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round" opacity=".4"/>
-      <!-- Cherry picker bucket -->
-      <g transform="translate(${bx2-14},${by2-22})">
-        <rect x="0" y="0" width="28" height="18" fill="${accent}" stroke="#000" stroke-width=".8" rx="2"/>
-        <rect x="2" y="2" width="24" height="4" fill="#000" opacity=".3"/>
-        <line x1="-3" y1="18" x2="31" y2="18" stroke="${accent}" stroke-width="2"/>
-      </g>
-    </g>
-    <!-- Height label -->
-    <g transform="translate(${bx2-20},${by2-35})">
-      <rect x="-6" y="-14" width="70" height="18" fill="${accent}" rx="3"/>
-      <text x="28" y="-1" fill="#000" font-family="'Bebas Neue',sans-serif" font-size="14" font-weight="bold" text-anchor="middle" letter-spacing=".5">${c.h} M</text>
-    </g>
-    <!-- Model name -->
-    <text x="20" y="40" fill="${accent}" font-family="'Bebas Neue',sans-serif" font-size="22" letter-spacing="2">${c.base.split('/')[0].toUpperCase()}</text>
-    <text x="20" y="60" fill="#fff" font-family="'Montserrat',sans-serif" font-size="11" opacity=".7" letter-spacing="1">${c.cat.toUpperCase()}</text>
-  </svg>`;
-}
-
-function workSVG(w,i){
-  const accents=['#c8a24e','#4caf50','#42a5f5','#ffa726','#ab47bc','#ef5350','#26a69a','#ff7043','#78909c','#ec407a'];
-  const a=accents[i%accents.length];
-  const h=12+(i%6)*3;
-  return `<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-    <defs>
-      <linearGradient id="wbg${i}" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="#1a1a1a"/>
-        <stop offset="1" stop-color="#0a0a0a"/>
-      </linearGradient>
-      <pattern id="wg${i}" width="16" height="16" patternUnits="userSpaceOnUse">
-        <path d="M 16 0 L 0 0 0 16" fill="none" stroke="#fff" stroke-width=".3" opacity=".06"/>
-      </pattern>
-    </defs>
-    <rect width="300" height="300" fill="url(#wbg${i})"/>
-    <rect width="300" height="300" fill="url(#wg${i})"/>
-    <!-- Building silhouette -->
-    <rect x="40" y="${80+i%3*10}" width="80" height="${180-i%3*10}" fill="#2a2a2a" stroke="${a}" stroke-width=".8" opacity=".6"/>
-    <g fill="${a}" opacity=".25">
-      ${Array.from({length:8},(_,j)=>`<rect x="${48+Math.floor(j/4)*30}" y="${90+(j%4)*35}" width="14" height="18"/>`).join('')}
-    </g>
-    <rect x="160" y="${60+i%4*8}" width="100" height="${200-i%4*8}" fill="#2a2a2a" stroke="${a}" stroke-width=".8" opacity=".5"/>
-    <g fill="${a}" opacity=".2">
-      ${Array.from({length:12},(_,j)=>`<rect x="${168+Math.floor(j/4)*25}" y="${72+(j%4)*40}" width="12" height="22"/>`).join('')}
-    </g>
-    <!-- Ground -->
-    <line x1="0" y1="260" x2="300" y2="260" stroke="#fff" stroke-width="1" opacity=".2"/>
-    <!-- Truck -->
-    <g transform="translate(90,230)">
-      <circle cx="10" cy="22" r="7" fill="#111" stroke="#555" stroke-width=".8"/>
-      <circle cx="50" cy="22" r="7" fill="#111" stroke="#555" stroke-width=".8"/>
-      <rect x="0" y="8" width="70" height="10" fill="#2a2a2a" stroke="${a}" stroke-width=".5"/>
-      <rect x="0" y="-2" width="18" height="12" fill="#2a2a2a" stroke="${a}" stroke-width=".5"/>
-      <!-- Boom -->
-      <line x1="40" y1="8" x2="${40+Math.cos(60*Math.PI/180)*h*6}" y2="${8-Math.sin(60*Math.PI/180)*h*6}" stroke="${a}" stroke-width="3" stroke-linecap="round"/>
-      <rect x="${40+Math.cos(60*Math.PI/180)*h*6-6}" y="${8-Math.sin(60*Math.PI/180)*h*6-10}" width="14" height="9" fill="${a}" rx="1"/>
-    </g>
-    <!-- Sparkle -->
-    <circle cx="${150+((i*37)%100)}" cy="${50+((i*23)%80)}" r="1.5" fill="${a}" opacity=".7"/>
-    <circle cx="${230+((i*19)%40)}" cy="${70+((i*41)%50)}" r="1" fill="#fff" opacity=".5"/>
-    <!-- Badge -->
-    <g transform="translate(16,20)">
-      <rect x="0" y="0" width="50" height="20" fill="${a}" rx="3"/>
-      <text x="25" y="14" fill="#000" font-family="'Bebas Neue',sans-serif" font-size="12" font-weight="bold" text-anchor="middle" letter-spacing="1">${h} M</text>
-    </g>
-  </svg>`;
-}
-
-function heroSVG(){
-  return `<svg viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
-    <defs>
-      <linearGradient id="hgrad" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="#1a1a1a"/>
-        <stop offset=".5" stop-color="#0f0f0f"/>
-        <stop offset="1" stop-color="#000"/>
-      </linearGradient>
-      <radialGradient id="hglow" cx=".5" cy=".5" r=".5">
-        <stop offset="0" stop-color="#c8a24e" stop-opacity=".2"/>
-        <stop offset="1" stop-color="#c8a24e" stop-opacity="0"/>
-      </radialGradient>
-      <pattern id="hgrid" width="30" height="30" patternUnits="userSpaceOnUse">
-        <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#c8a24e" stroke-width=".4" opacity=".1"/>
-      </pattern>
-    </defs>
-    <rect width="600" height="450" fill="url(#hgrad)"/>
-    <rect width="600" height="450" fill="url(#hgrid)"/>
-    <circle cx="300" cy="230" r="200" fill="url(#hglow)"/>
-    <!-- Ground -->
-    <line x1="0" y1="380" x2="600" y2="380" stroke="#c8a24e" stroke-width="1" opacity=".4"/>
-    <line x1="0" y1="390" x2="600" y2="390" stroke="#fff" stroke-width=".5" opacity=".15" stroke-dasharray="5,8"/>
-    <!-- Height markers -->
-    <g opacity=".4" stroke="#c8a24e" stroke-width=".7">
-      ${[50,100,150,200,250,300].map(y=>`<line x1="20" y1="${380-y}" x2="32" y2="${380-y}"/>`).join('')}
-    </g>
-    <g fill="#c8a24e" opacity=".6" font-family="'Bebas Neue',monospace" font-size="11" letter-spacing="1">
-      <text x="40" y="335">5M</text>
-      <text x="40" y="285">10M</text>
-      <text x="40" y="235">15M</text>
-      <text x="40" y="185">20M</text>
-      <text x="40" y="135">25M</text>
-      <text x="40" y="85">28M</text>
-    </g>
-    <!-- Truck -->
-    <g transform="translate(180,310)">
-      <circle cx="30" cy="55" r="22" fill="#0f0f0f" stroke="#c8a24e" stroke-width="1"/>
-      <circle cx="30" cy="55" r="10" fill="#2a2a2a"/>
-      <circle cx="120" cy="55" r="22" fill="#0f0f0f" stroke="#c8a24e" stroke-width="1"/>
-      <circle cx="120" cy="55" r="10" fill="#2a2a2a"/>
-      <circle cx="175" cy="55" r="22" fill="#0f0f0f" stroke="#c8a24e" stroke-width="1"/>
-      <circle cx="175" cy="55" r="10" fill="#2a2a2a"/>
-      <!-- Chassis -->
-      <rect x="0" y="20" width="230" height="20" fill="#252525" stroke="#c8a24e" stroke-width="1"/>
-      <!-- Cabin -->
-      <path d="M0 20 L0 -30 L55 -45 L75 -45 L75 20 Z" fill="#2a2a2a" stroke="#c8a24e" stroke-width="1"/>
-      <rect x="10" y="-35" width="52" height="28" fill="#1a3050" stroke="#c8a24e" stroke-width=".5" rx="2"/>
-      <line x1="36" y1="-35" x2="36" y2="-7" stroke="#c8a24e" stroke-width=".5" opacity=".5"/>
-      <!-- Bed -->
-      <rect x="75" y="-5" width="155" height="25" fill="#1a1a1a" stroke="#c8a24e" stroke-width=".6"/>
-      <!-- Outriggers -->
-      <rect x="-12" y="40" width="18" height="8" fill="#c8a24e"/>
-      <rect x="220" y="40" width="18" height="8" fill="#c8a24e"/>
-      <!-- Turret -->
-      <rect x="145" y="-15" width="40" height="38" fill="#c8a24e" rx="3"/>
-      <circle cx="165" cy="-8" r="6" fill="#1a1a1a"/>
-    </g>
-    <!-- BOOM extending to top -->
-    <g>
-      <line x1="345" y1="295" x2="170" y2="70" stroke="#c8a24e" stroke-width="12" stroke-linecap="round"/>
-      <line x1="345" y1="295" x2="170" y2="70" stroke="#1a1a1a" stroke-width="5" stroke-linecap="round" opacity=".35"/>
-      <line x1="345" y1="295" x2="170" y2="70" stroke="#fff" stroke-width="1" stroke-linecap="round" opacity=".15"/>
-      <!-- Segments -->
-      <line x1="305" y1="245" x2="312" y2="255" stroke="#000" stroke-width="1.5"/>
-      <line x1="260" y1="185" x2="267" y2="195" stroke="#000" stroke-width="1.5"/>
-      <line x1="215" y1="130" x2="222" y2="140" stroke="#000" stroke-width="1.5"/>
-      <!-- Bucket -->
-      <g transform="translate(140,50)">
-        <rect x="0" y="0" width="48" height="28" fill="#c8a24e" stroke="#000" stroke-width="1.2" rx="3"/>
-        <rect x="3" y="3" width="42" height="5" fill="#000" opacity=".4"/>
-        <line x1="-4" y1="28" x2="52" y2="28" stroke="#c8a24e" stroke-width="3"/>
-        <!-- Operator silhouette -->
-        <circle cx="24" cy="-4" r="4" fill="#c8a24e" opacity=".8"/>
-        <rect x="20" y="-1" width="8" height="5" fill="#c8a24e" opacity=".8"/>
-      </g>
-      <!-- 28M marker -->
-      <g transform="translate(195,25)">
-        <rect x="0" y="0" width="82" height="26" fill="#c8a24e" rx="4"/>
-        <text x="41" y="18" fill="#000" font-family="'Bebas Neue',sans-serif" font-size="18" font-weight="bold" text-anchor="middle" letter-spacing="1">28 МЕТРОВ</text>
-      </g>
-    </g>
-    <!-- Brand label -->
-    <g transform="translate(380,400)">
-      <rect x="-2" y="-16" width="180" height="22" fill="#c8a24e" opacity=".15" rx="3"/>
-      <text x="88" y="0" fill="#c8a24e" font-family="'Bebas Neue',sans-serif" font-size="13" letter-spacing="3" text-anchor="middle">ALMATY LIFT · JAPAN</text>
-    </g>
-  </svg>`;
-}
-
 /* =============== RENDERING =============== */
-let cF='all',cS='pa',lang='ru',dC=null;
+let lang='ru',dC=null;
 const $=id=>document.getElementById(id);
 
 function rCat(){
-  const l=gF();
-  $('ccnt').textContent=l.length+' '+t('cnt');
-  const curLang=lang;
-  $('cg').innerHTML=l.map(c=>{
-    const nm=curLang==='kz'?c.nameKz:c.name;
-    const ct=curLang==='kz'?c.catKz:c.cat;
+  $('ccnt').textContent=C.length+' '+t('cnt');
+  $('cg').innerHTML=C.map(c=>{
+    const nm=lang==='kz'?c.nameKz:c.name;
+    const ct=lang==='kz'?c.catKz:c.cat;
+    const minLabel=c.minHours===4?t('min_h4'):t('min_h3');
     return`<div class="cc reveal vis">
       <div class="cci" onclick="oDet(${c.id})">
-        ${truckSVG(c,'card')}
+        <img src="${c.img}" alt="${nm}" loading="lazy" onerror="this.style.background='var(--bg3)';this.style.minHeight='180px'">
         <span class="cbg ${c.catCls}">${ct}</span>
-        <span class="chdg">${c.h} М</span>
+        <span class="chdg">${c.hRange} М</span>
+        <span class="sale-chip">СКИДКА 10%</span>
       </div>
       <div class="cby">
         <div class="cn">${nm}</div>
@@ -1062,7 +1072,7 @@ function rCat(){
         <div class="csp">
           <div class="csi">
             <div class="csic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></div>
-            <div class="csv">${c.h} м</div>
+            <div class="csv">${c.hRange} м</div>
             <div class="csl">${t('sp_h')}</div>
           </div>
           <div class="csi">
@@ -1077,65 +1087,41 @@ function rCat(){
           </div>
         </div>
         <div class="cf">
-          <div class="cp">${c.price.toLocaleString('ru')} ₸<small>${t('per_h')} · ${t('min_h')}</small></div>
+          <div class="cp">${c.price.toLocaleString('ru')} ₸<small>${t('per_h')} · ${minLabel}</small></div>
           <button class="bd" onclick="oDet(${c.id})">${t('more')}</button>
         </div>
       </div>
-    </div>`}).join('');
+    </div>`;
+  }).join('');
 }
-
-function gF(){
-  let l=[...C];
-  if(cF!=='all')l=l.filter(c=>c.filter===cF);
-  if(cS==='pa')l.sort((a,b)=>a.price-b.price);
-  else if(cS==='pd')l.sort((a,b)=>b.price-a.price);
-  else if(cS==='ha')l.sort((a,b)=>a.h-b.h);
-  else if(cS==='hd')l.sort((a,b)=>b.h-a.h);
-  return l;
-}
-
-$('flt').addEventListener('click',e=>{
-  if(!e.target.closest('.fb'))return;
-  const b=e.target.closest('.fb');
-  document.querySelectorAll('.fb').forEach(x=>x.classList.remove('on'));
-  b.classList.add('on');
-  cF=b.dataset.filter;
-  rCat();
-});
-$('ssel').addEventListener('change',e=>{cS=e.target.value;rCat()});
 
 /* =============== DETAIL MODAL =============== */
 function oDet(id){
   const c=C.find(x=>x.id===id);dC=c;
   $('dov').classList.add('on');$('dm').classList.add('on');document.body.style.overflow='hidden';
-  $('dg').innerHTML=truckSVG(c,'detail');
   const nm=lang==='kz'?c.nameKz:c.name;
   const ct=lang==='kz'?c.catKz:c.cat;
   const ds=lang==='kz'?c.descKz:c.desc;
   const uf=lang==='kz'?c.useForKz:c.useFor;
+  const minLabel=c.minHours===4?t('min_h4'):t('min_h3');
+  $('dg').innerHTML=`<img src="${c.img}" alt="${nm}" style="width:100%;height:100%;object-fit:cover" onerror="this.parentElement.style.background='var(--bg3)'">`;
   $('dbd').innerHTML=`
     <span class="mcs ${c.catCls}">${ct}</span>
     <h2 class="mcn">${nm}</h2>
     <div class="mpb">
       <span class="mpr">${c.price.toLocaleString('ru')} ₸</span>
-      <span class="mpu">${t('per_h')} · ${t('min_h')}</span>
+      <span class="mpu">${t('per_h')} · ${minLabel}</span>
     </div>
     <div class="msp">
-      <div class="ms"><div class="msi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></div><div><div class="msl">${t('sp_h')}</div><div class="msv">${c.h} м</div></div></div>
+      <div class="ms"><div class="msi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 11 12 6 7 11"/></svg></div><div><div class="msl">${t('sp_h')}</div><div class="msv">${c.hRange} м</div></div></div>
       <div class="ms"><div class="msi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></div><div><div class="msl">${t('sp_r')}</div><div class="msv">${c.r} м</div></div></div>
       <div class="ms"><div class="msi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M7 8V5a5 5 0 0110 0v3"/></svg></div><div><div class="msl">${t('sp_cap')}</div><div class="msv">${c.cap} кг</div></div></div>
-      <div class="ms"><div class="msi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg></div><div><div class="msl">${t('sp_base')}</div><div class="msv">${c.base}</div></div></div>
       <div class="ms"><div class="msi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><div><div class="msl">${t('sp_diel')}</div><div class="msv">${c.diel}</div></div></div>
       <div class="ms"><div class="msi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/></svg></div><div><div class="msl">${t('sp_light')}</div><div class="msv">${c.light}</div></div></div>
+      <div class="ms"><div class="msi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/></svg></div><div><div class="msl">${t('sp_base')}</div><div class="msv">${c.base.split('/')[0].trim()}</div></div></div>
     </div>
-    <div class="mds">
-      <strong>${lang==='kz'?'Сипаттамасы':'Описание'}</strong>
-      ${ds}
-    </div>
-    <div class="mds" style="margin-top:8px">
-      <strong>${lang==='kz'?'Қолданылуы':'Для чего подходит'}</strong>
-      ${uf}
-    </div>
+    <div class="mds"><strong>${lang==='kz'?'Сипаттамасы':'Описание'}</strong>${ds}</div>
+    <div class="mds" style="margin-top:8px"><strong>${lang==='kz'?'Қолданылуы':'Для чего подходит'}</strong>${uf}</div>
     <div class="mac">
       <button class="ma ma1" onclick="clDet();openBk('${nm}')">${t('m_book')}</button>
       <a href="tel:+77079009329" class="ma ma2">${t('m_call')}</a>
@@ -1146,46 +1132,64 @@ function oDet(id){
 function clDet(){$('dov').classList.remove('on');$('dm').classList.remove('on');document.body.style.overflow=''}
 
 /* =============== CALCULATOR =============== */
-let calcState={techId:1,hours:2,zone:'city',extras:{night:false,holiday:false,urgent:false}};
+let calcState={techId:1,hours:3,zone:'city',extras:{night:false,holiday:false,urgent:false,discount:false}};
 function initCalc(){
-  $('calcTech').innerHTML=C.map(c=>{const nm=lang==='kz'?c.nameKz:c.name;return`<option value="${c.id}">${nm} — ${c.price.toLocaleString('ru')} ₸/ч</option>`}).join('');
+  $('calcTech').innerHTML=C.map(c=>{
+    const nm=lang==='kz'?c.nameKz:c.name;
+    return`<option value="${c.id}">${nm} — ${c.price.toLocaleString('ru')} ₸/ч</option>`;
+  }).join('');
   $('calcTech').value=calcState.techId;
-  $('calcTech').addEventListener('change',e=>{calcState.techId=+e.target.value;renderCalc()});
-  $('calcHours').addEventListener('input',e=>{calcState.hours=+e.target.value;$('calcHrs').textContent=e.target.value;renderCalc()});
-  document.querySelectorAll('#calcZone .calc-rb').forEach(b=>b.addEventListener('click',()=>{
+  $('calcTech').onchange=e=>{
+    calcState.techId=+e.target.value;
+    const c=C.find(x=>x.id===calcState.techId);
+    const minH=c.minHours;
+    $('calcHours').min=minH;
+    if(calcState.hours<minH){calcState.hours=minH;$('calcHours').value=minH;$('calcHrs').textContent=minH;}
+    $('calcMinLabel').textContent=minH+'ч (мин)';
+    renderCalc();
+  };
+  $('calcHours').oninput=e=>{calcState.hours=+e.target.value;$('calcHrs').textContent=e.target.value;renderCalc()};
+  document.querySelectorAll('#calcZone .calc-rb').forEach(b=>b.onclick=()=>{
     document.querySelectorAll('#calcZone .calc-rb').forEach(x=>x.classList.remove('on'));
     b.classList.add('on');calcState.zone=b.dataset.zone;renderCalc();
-  }));
-  document.querySelectorAll('.calc-cb[data-extra]').forEach(cb=>cb.addEventListener('change',e=>{
-    const k=cb.dataset.extra;calcState.extras[k]=e.target.checked;
-    cb.classList.toggle('on',e.target.checked);renderCalc();
-  }));
+  });
+  document.querySelectorAll('.calc-cb[data-extra]').forEach(cb=>{
+    cb.querySelector('input').onchange=e=>{
+      const k=cb.dataset.extra;calcState.extras[k]=e.target.checked;
+      cb.classList.toggle('on',e.target.checked);renderCalc();
+    };
+  });
   renderCalc();
 }
 function renderCalc(){
-  const c=C.find(x=>x.id===calcState.techId);
-  if(!c)return;
+  const c=C.find(x=>x.id===calcState.techId);if(!c)return;
   const rate=c.price;
   const base=rate*calcState.hours;
   let deliv=0;
   if(calcState.zone==='near')deliv=5000;
   if(calcState.zone==='far')deliv=15000;
-  let subtotal=base+deliv;
   const rows=[];
   rows.push([t('calc_row_rate'),rate.toLocaleString('ru')+' ₸/ч']);
   rows.push([t('calc_row_hrs'),calcState.hours+' '+t('calc_hrs')]);
   rows.push([t('calc_row_base'),base.toLocaleString('ru')+' ₸']);
   if(deliv>0)rows.push([t('calc_row_deliv'),'+'+deliv.toLocaleString('ru')+' ₸']);
-  let total=subtotal;
+  let total=base+deliv;
   if(calcState.extras.night){total=Math.round(total*1.3);rows.push([t('calc_row_night'),'×1.3'])}
   if(calcState.extras.holiday){total=Math.round(total*1.2);rows.push([t('calc_row_holiday'),'×1.2'])}
   if(calcState.extras.urgent){total+=3000;rows.push([t('calc_row_urgent'),'+3 000 ₸'])}
+  if(calcState.extras.discount){const d=Math.round(total*.1);total-=d;rows.push([t('calc_row_discount'),'−'+d.toLocaleString('ru')+' ₸'])}
   $('calcRows').innerHTML=rows.map(r=>`<div class="calc-row"><span>${r[0]}</span><span>${r[1]}</span></div>`).join('');
   $('calcTotal').innerHTML=total.toLocaleString('ru')+' ₸<small>'+t('calc_est')+'</small>';
 }
 function calcPick(id){
   calcState.techId=id;
+  const c=C.find(x=>x.id===id);
+  calcState.hours=Math.max(calcState.hours,c.minHours);
   $('calcTech').value=id;
+  $('calcHours').min=c.minHours;
+  $('calcHours').value=calcState.hours;
+  $('calcHrs').textContent=calcState.hours;
+  $('calcMinLabel').textContent=c.minHours+'ч (мин)';
   renderCalc();
   document.getElementById('calculator').scrollIntoView({behavior:'smooth'});
 }
@@ -1200,6 +1204,7 @@ function calcToBooking(){
   if(calcState.extras.night)extras.push(lang==='kz'?'Түнгі ауысым':'Ночная смена');
   if(calcState.extras.holiday)extras.push(lang==='kz'?'Демалыс':'Выходной');
   if(calcState.extras.urgent)extras.push(lang==='kz'?'Жедел':'Срочно');
+  if(calcState.extras.discount)extras.push(lang==='kz'?'Жеңілдік 10%':'Скидка 10%');
   const total=$('calcTotal').textContent.split('Ор')[0].split('Шам')[0].trim();
   $('bkm').value=t('a_calc_pref')+': '+total+(extras.length?' · '+extras.join(', '):'');
 }
@@ -1208,7 +1213,10 @@ function calcToBooking(){
 function rWorks(){
   $('wg').innerHTML=WORKS.map((w,i)=>{
     const tt=lang==='kz'?w.tKz:w.t;
-    return`<div class="wi reveal vis">${workSVG(w,i)}<div class="wi-cap">${tt}</div></div>`;
+    return`<div class="wi reveal vis">
+      <img src="${w.img}" alt="${tt}" loading="lazy" onerror="this.style.display='none'">
+      <div class="wi-cap">${tt}</div>
+    </div>`;
   }).join('');
 }
 
@@ -1218,10 +1226,7 @@ function rFAQ(){
     const q=lang==='kz'?f.qKz:f.q;
     const a=lang==='kz'?f.aKz:f.a;
     return`<div class="fqi reveal vis" data-idx="${i}">
-      <button class="fqq" onclick="togFaq(${i})">
-        <span>${q}</span>
-        <span class="fqi-ic">+</span>
-      </button>
+      <button class="fqq" onclick="togFaq(${i})"><span>${q}</span><span class="fqi-ic">+</span></button>
       <div class="fqa"><div class="fqa-in">${a}</div></div>
     </div>`;
   }).join('');
@@ -1239,7 +1244,7 @@ function openBk(cn){
   $('bkForm').style.display='';$('bkSuc').classList.remove('on');
   const sel=$('bkc');
   sel.innerHTML='<option value="">'+(lang==='kz'?'— Таңдаңыз —':'— Выберите —')+'</option>'+
-    C.map(c=>`<option value="${(lang==='kz'?c.nameKz:c.name)}">${lang==='kz'?c.nameKz:c.name}</option>`).join('');
+    C.map(c=>`<option value="${lang==='kz'?c.nameKz:c.name}">${lang==='kz'?c.nameKz:c.name}</option>`).join('');
   if(cn)sel.value=cn;
   $('bov').classList.add('on');$('bm').classList.add('on');document.body.style.overflow='hidden';
 }
@@ -1256,14 +1261,15 @@ function subBk(){
     (tm?t('a_time')+': '+tm:''),
     (y?t('a_hrs')+': '+y:''),
     (ad?t('a_addr')+': '+ad:''),
-    (m?t('a_com')+': '+m:'')].filter(Boolean);
+    (m?t('a_com')+': '+m:''),
+    lang==='kz'?'Жеңілдік: 10%-ға дейін':'Скидка: до 10%'].filter(Boolean);
   const url='https://wa.me/77079009329?text='+encodeURIComponent(lines.join('\n'));
   window.open(url,'_blank');
   $('bkForm').style.display='none';$('bkSuc').classList.add('on');
   setTimeout(clBk,2800);
 }
 
-/* =============== HEADER / MOBILE / THEME =============== */
+/* =============== MOBILE MENU =============== */
 function togMob(){
   document.querySelector('.ham').classList.toggle('on');
   document.querySelector('.mob-m').classList.toggle('on');
@@ -1291,16 +1297,18 @@ function setLang(l){
 }
 function rMobFleet(){
   let h='<div class="mob-grp"><div class="mob-grp-t">'+(lang==='kz'?'Техника':'Техника')+'</div>';
-  C.forEach(c=>{const nm=lang==='kz'?c.nameKz:c.name;h+=`<a class="mob-car" href="javascript:void(0)" onclick="togMob();oDet(${c.id})">${nm} · ${c.h} м</a>`});
+  C.forEach(c=>{
+    const nm=lang==='kz'?c.nameKz:c.name;
+    h+=`<a class="mob-car" href="javascript:void(0)" onclick="togMob();oDet(${c.id})">${nm}</a>`;
+  });
   h+='</div>';
   $('mobFleet').innerHTML=h;
 }
 
 /* =============== INIT =============== */
 window.addEventListener('load',()=>{
-  try{const t=localStorage.getItem('liftTheme');if(t==='light'){togTheme()}}catch(e){}
+  try{const th=localStorage.getItem('liftTheme');if(th==='light')togTheme()}catch(e){}
   try{const l=localStorage.getItem('liftLang');if(l==='kz')setLang('kz')}catch(e){}
-  $('heroVis').innerHTML=heroSVG();
   rCat();rWorks();rFAQ();rMobFleet();initCalc();
 });
 window.addEventListener('scroll',()=>{$('su').classList.toggle('sh',window.scrollY>300)});
